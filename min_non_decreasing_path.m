@@ -5,7 +5,7 @@ clear
 N = 3;
 n_a = 2; %number of actions available to each agent
 S = n_a^N; % total number of actions/states in the system
-C = 100; % range of payoff; small C, more likely for agents to have the same payoff values
+C = 1000; % range of payoff; small C, more likely for agents to have the same payoff values
 rng(0);
 U = uint8(ceil(rand(S, N)*C)); %check correlation! 
 % first index: i \in I set of agents
@@ -25,14 +25,14 @@ for i=1:1:S-1
     end
 end
 
+Abin = A ~= 0;
+degree = sum(Abin,1).' + sum(Abin,2)
+
 %imshow(A);
 G = digraph(A);
+
 
 hold on
 plot(G);
 axis off
 hold off
-
-Abin = A ~= 0;
-indegree = sum(Abin, 1);
-outdegree = sum(Abin, 2);

@@ -1,0 +1,17 @@
+%% coalition filtration
+% given adjacency matrix, find paths to global minimum per coalition
+% assume n_a = 2 (2 actions available to agents) 
+% default is N = 3;
+
+
+%% Single agent
+Agents = zeros(S, S, N);
+for i = 1:N
+    Agents(:,:,i) = A(OneMoveBinary(N, i));
+end
+
+%% Two agents
+perm = uint8(N*(N-1)/2);
+Agents = zeros(S,S, perm);
+for i = 
+
