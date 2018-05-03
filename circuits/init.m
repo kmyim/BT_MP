@@ -1,9 +1,12 @@
+clear 
+clc
+hold off
 %% Maxmimise power output problem
 
 %Rmap = [1.2, 1.6; 1.3, 1.7; 1.1, 1.5; 1.3, 1.5].';
 %Rmap = [1.2, 1.6; 1.3, 1.7; 1.2, 1.6; 1.3, 1.7].';
 %Rmap = [1.2, 1.6; 1.2, 1.6; 1.2, 1.6; 1.2, 1.6].';
-Rmap = sqrt(2)*ones(2,4) + 0.2*randn(2,4);
+Rmap = sqrt(2)*ones(2,4) + 1*randn(2,4);
 
 
 U = zeros(16,4);
@@ -29,7 +32,8 @@ U = U.'*100;
 
 %collective utility
 UC = min(U, [], 1);
-%maxmin solution: for every state, min over agents, then
-[~, state_maxmin]= max(UC);
-
+[UC,I] = sort(UC); %rank according to Co-Op value
+U = U(:,I);
 Unorm = (U - min(min(U)))/(max(max(U))- min(min(U)));
+
+payoffplot

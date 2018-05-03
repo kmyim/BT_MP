@@ -6,16 +6,13 @@ s = 16; %16 states
 %get payoff for each agent by multiplying kron([0,1], etc.)
 
 O = ones(s,s);
-N = ones(s,s,c); %neighbourhood of agent states
 E = ones(c, s,s,4); %payoff for each agent, when move from state i to j, restricted by coalition
 C = zeros(s, s, c); %coalition operators
 
-% find neighbourhood of coalition states, subtracting off states that are
-% not in the coalition
+% neighbourhood sets
 
-for i = 1:4
-    N(:,:,i) = O - OneMoveBinary(4,i);
-end
+neighs =  coalition_neighbourhood(4);
+N = neighs(:,:,co_neigh_index(4,3));
 %(though symmetric, starting state in rows, end state in columns)
 
 %find payoffs of coalition moves for each agent

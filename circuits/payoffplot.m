@@ -1,11 +1,11 @@
-[~,I] = sort(UC); %rank according to Co-Op value
 hold on
 for i=1:4
-    plot(U(i, I))
+    plot(U(i, :))
     
 end
-plot(UC(I), 'o');
-hold off
+plot(UC, 'o');
+
 
 title('Power output of light bulbs vs configuration')
 
+hold off
