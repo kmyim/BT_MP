@@ -1,0 +1,10 @@
+
+[~,I] = sort(UC); %rank according to Co-Op value
+
+for i=1:4
+    plot(U(i, :))
+    hold on
+end
+plot(UC, 'o');
+hold off
+

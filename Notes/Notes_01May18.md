@@ -109,8 +109,7 @@ The really hard but interesting question is the relationship between the utiliti
 
 We expect computation and simulation to be expensive; complexity of computation mentioned so far is exponential in the number of states.
 
-If we have time, We can hop onto the intellectual gravy train of machine learning and pretend some reinforced learning algorithm adaptively learning sequences is a good model of human behaviour. Further work can also be done on generalising the coalition operator e.g. do agents retain _memory_ from previous coalitions?
-
+If we have time, We can hop onto the intellectual gravy train of machine learning and pretend some reinforced learning algorithm adaptively learning sequences is a good model of human behaviour. Further work can also be done on generalising the coalition operator e.g. do agents retain _memory_ from previous coalition
 
 [^1]: _Aside_: if $u$ is a binary function, where an agent gives assent to a project proposal if $u=1$ and vetoes the proposal if $u=0$ , the Co-Op optimum is simply the condition that $u_i(a^\ast) = 1 \quad  \forall i \in \mathcal{I}$.
 
