@@ -1,4 +1,6 @@
-
+N = 4; %4 agents
+n = 2; % 2 states available to agents
+s = n^N;
 combinations = zeros(N,1);
 for k=1:N
     combinations(k) = nchoosek(N,k);
@@ -22,7 +24,7 @@ for k=1:N %loop over coalition size
         
         C(:,:, counter)= min(E(j, :, :, :), [], 4); 
         C(:,:, counter) = (C(:,:,counter)) == max(C(:,:,counter), [], 2);
-        C(:,:, counter) = C(:,:, counter)./sum(C(:,:, counter),2);
+        
         counter = counter +1;
     end
 end

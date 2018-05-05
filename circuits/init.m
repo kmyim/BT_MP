@@ -2,15 +2,20 @@ clear
 clc
 hold off
 %% Maxmimise power output problem
+N = 4; %4 agents
+n = 2; % 2 states available to agents
+s = n^N;
 
+%% Here code only works for N=4, need fix!
 %Rmap = [1.2, 1.6; 1.3, 1.7; 1.1, 1.5; 1.3, 1.5].';
-%Rmap = [1.2, 1.6; 1.3, 1.7; 1.2, 1.6; 1.3, 1.7].';
+%Rmap = [1.21, 1.59; 1.31, 1.69; 1.19, 1.61; 1.29, 1.71].';
 %Rmap = [1.2, 1.6; 1.2, 1.6; 1.2, 1.6; 1.2, 1.6].';
-Rmap = sqrt(2)*ones(2,4) + 1*randn(2,4);
+Rmap = sqrt(2)*ones(2,4) + 0.1*randn(2,4);
+%Rmap = 1*ones(2,4) + 0.1*randn(2,4);
 
 
-U = zeros(16,4);
-A = zeros(16,4);
+U = zeros(s,N);
+A = zeros(s,N);
 counter = 1;
 for i=1:2
     for j= 1:2

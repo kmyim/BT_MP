@@ -30,6 +30,8 @@ $$ \max_{a \in A} \min_{i \in \mathcal{I}} u_i(a)   \leq \min_{i \in \mathcal{I}
 
 > **Question**: Can agents strike a balance between altruistic and selfish intentions?
 
+Another idea: Ising model. Frustrated spins.
+
 # Model for Collaborative Process
 
 However there is more finesse to this argument. The assumption that a selfish agent can maximise over all states $A$ is unrealistic - that is what each agent wants; whether it can actually do so is another matter entirely, restricted by its restricted influence on the project proposal. In complex problems (like chess) it is also unlikely that it would be computationally efficient to pre-compute $u$ for all states of the system - usually we can only evaluate $u$ _during_ the game.
@@ -69,6 +71,33 @@ _Points to Explore_:
  - How could we exploit the structure of the problem (namely, the utility matrix $u$) to design a sequence $K$ that maximises $U(a_T)$ with as few time steps $T$ as possible, or make sure $U(a_t)$ always decreases? e.g. select certain members of $C_t$ to carry forward to $C_{t+1}$ under some criteria?
  - Is it possible to actually design $K$ that decreases $U$ for a general problem?
 
+# Utility functions with Different Properties
+## Independent Preferences vs Independent Payoff
+We say each agent has an **independent preference** for their course of action if each agent $i$ acting selfishly maintains has the same _ordering_ of actions regardless of the choices of other agents. More precisely,
+
+$$ u_i(a_i \ \lvert\ a_{-i}') \geq u_i( a_i' \ \lvert \ a_{-i}') \ \quad \forall a, a' \in A, \quad \forall i \in \mathcal{I}.$$
+
+If agents with independent preference were playing a _simultaneous game_, then there is a **(Pareto) dominant strategy solution** $a^\ast = (a_1^\ast, \ldots, a^\ast_N)$ where everyone would take their most favoured action $a_i^\ast \in A_i$: it would be the best thing that anyone can do regardless of how other agents play. Yet in Co-Op $a^\ast$ will not be the generic solution. Bear in mind having an independent preference does not exclude the case
+$$ \exists a_{-i}' \quad \text{s.t.}\quad u_i(a_i^\ast \ \lvert \ a_{-i}) \geq u_i(a_i^\ast \ \lvert \ a_{-i}')$$
+where an agent's best payoff can be reduced or increased by actions of other agents. Thus in the Co-Op scenario agents might have to relinquish their most preferred action $\alpha_i^\ast$ to lift the payoff of the least fortunate agent.
+
+> This demonstrates how Co-Op might be a bad philosophy if too many agents had to compromise. However, smaller and 'coalitions' might lead to fewer compromises
+
+We note that agents having **independent payoffs** i.e. the actual _value_ of the payoff is independent of the actions of other agents is a stronger statement
+$$ u_i(a_i\ \lvert\ a_{-i}) = u_i(a_i\ \lvert\ a_{-i}') \  \quad \forall\ a, a' \in A, \quad \forall i \in \mathcal{I}.$$
+Independent payoff implies independent preference, but not the other way round. These two conditions have distinct pathologies. In the case of independent payoffs, $a^\ast = (a_1^\ast, \ldots, a_N^\ast)$ is not only the dominant strategy solution in a simultaneous game, it is also admitted as a solution of Co-Op; for if agents agree on $a^\ast$ the utility of the least fortunate agent cannot be improved by knocking other agents off their best actions. However, since Co-Op is insensitive to the plight of agents in better situations, there might not be a mechanism to enforce $a^\ast$ if deviating away from $a^\ast$ does not lower the utility of the worse performing agent.
+
+## Biased Global Optimisation
+Suppose there is an overarching objective $V(a)$ that nominally all agents want to jointly optimise. Then we can model the individual agent payoffs as $u_i(a) = V(a) + \epsilon \mu_i(a)$, where $\mu_i$ represents an individual **bias** in evaluating a states of affairs; if we normalise $V,\ \mu_i \in [0,1]$, then $\epsilon$ is a measure of the relative strength of individual biases.
+
+# Classification of Coalitions
+
+## Happy Coalitions
+A **happy coalition** $C$ with respect to a state $a$ is one such that
+$$u_i(\mathcal{C} a) \geq u_i(a) \quad \forall \ i \in C.$$
+Suppose a coalition is happy for
+
+> Good coalitions lead to good sequences vs Co-Op objective?
 
 # Fixed Points
 A **fixed point** of an operator $\mathcal{K}$ is an element $\alpha \in A$ if $\mathcal{K}\alpha = \alpha$. Moreover it is an **attractive fixed point** if starting from an arbitrary element $a_0$ in some neighbourhood $B \subseteq A$ of $\alpha$ the sequence $\{a_t \ \lvert \ a_{t+1} = \mathcal{K} a_{t}\}$ converges to $\alpha$. $N$ is called the attracting set of $\alpha$.
@@ -76,6 +105,13 @@ A **fixed point** of an operator $\mathcal{K}$ is an element $\alpha \in A$ if $
 In real life terms, if we can find $\mathcal{K}$ which has an attractive fixed point, we just need to loop _any_ project proposal $a_0 \in B \subseteq A$ round the sequence over and over again and we are guaranteed to reach a stable agreement.
 
 We could also find, for each $a$, the set of sequence operators that maps $a \mapsto a$: $\mathcal{O}_a = \{\mathcal{K} \in \mathcal{O} \ \lvert \ \mathcal{K}a = a\}$. This quantifies the stability of each state against a coalition. It is worth remarking that it is quite possible that $\mathcal{O}_{a^\ast} \neq \Gamma$ i.e. for the optimum of Co-Op is _not_ stable against coalition decision making; in the worst case, $\mathcal{O}_{a^\ast} = \{\mathcal{I}\}$.
+
+There is actually a very simple but neat observation regarding coalition operators.
+
+_Theorem_: For any coalition operator $\mathcal{C}$, $a' = \mathcal{C}a$ is a fixed point of $\mathcal{C}$ for any $a \in A$, i.e. $\mathcal{C}a' = a'$. In other words,
+$$\mathcal{C}^2 = \mathcal{C}.$$
+Moreover, any state is either a fixed point or in the attracting set of a $\mathcal{C}$.
+
 
 We can flesh out this landscape of fixed points and attracting sets with two approaches. One is to construct a metric space $(A, d)$, i.e. impose a measure of distance between states; the other is to represent our system of states and operators in terms of linear algebra.
 
@@ -92,7 +128,7 @@ $$  \begin{tikzcd}
   \end{tikzcd}$$
 The action of the linear operator $l(\mathcal{K})$ can be represented by a matrix $\mathcal{K}$ (overloading notation since it is becoming ridiculously cumbersome?): entries $\mathcal{K}_{a'a} = 1$ if $\varphi_a\xrightarrow{l(\mathcal{K})} \varphi_{a'}$, and $\mathcal{K}_{a'a} = 0$ if otherwise. In other words, the $a'$\textsuperscript{th} row in the $a$\textsuperscript{th} column is one if and only if the corresponding sequence operator sends state $a$ to $a'$, otherwise it is zero.
 
-We can still decompose $\mathcal{K}$ into products of generators $\mathcal{C}$. Needless to say $L$ is also a finitely represented semigroup closed under matrix multiplication.
+Matrices $\mathcal{K}$ are generated by matrices $\mathcal{C}$. Needless to say $L$ is also a finitely represented semigroup closed under matrix multiplication. Since $\mathcal{C}^2 = \mathcal{C}$, coalition operators are _projectors_ onto subspaces of $V$.
 
 A fixed point of operator $\mathcal{K}$ is then simply the eigenvector of the matrix $\mathcal{K}$ with eigenvalue one. We can take a matrix and compute its singular/eigenvalues for a stability analysis of that operator.
 
