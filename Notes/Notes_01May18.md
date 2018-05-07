@@ -104,14 +104,15 @@ A **fixed point** of an operator $\mathcal{K}$ is an element $\alpha \in A$ if $
 
 In real life terms, if we can find $\mathcal{K}$ which has an attractive fixed point, we just need to loop _any_ project proposal $a_0 \in B \subseteq A$ round the sequence over and over again and we are guaranteed to reach a stable agreement.
 
-We could also find, for each $a$, the set of sequence operators that maps $a \mapsto a$: $\mathcal{O}_a = \{\mathcal{K} \in \mathcal{O} \ \lvert \ \mathcal{K}a = a\}$. This quantifies the stability of each state against a coalition. It is worth remarking that it is quite possible that $\mathcal{O}_{a^\ast} \neq \Gamma$ i.e. for the optimum of Co-Op is _not_ stable against coalition decision making; in the worst case, $\mathcal{O}_{a^\ast} = \{\mathcal{I}\}$.
+We could also find, for each $a$, the set of sequence operators that maps $a \mapsto a$: $\mathcal{O}_a = \{\mathcal{K} \in \mathcal{O} \ \lvert \ \mathcal{K}a = a\}$, or the **stabiliser subgroup** or $a$. This quantifies the stability of each state against a coalition. It is worth remarking that it is quite possible that $\mathcal{O}_{a^\ast} \neq \Gamma$ i.e. for the optimum of Co-Op is _not_ stable against coalition decision making; in the worst case, $\mathcal{O}_{a^\ast} = \{\mathcal{I}\}$.
 
 There is actually a very simple but neat observation regarding coalition operators.
 
-_Theorem_: For any coalition operator $\mathcal{C}$, $a' = \mathcal{C}a$ is a fixed point of $\mathcal{C}$ for any $a \in A$, i.e. $\mathcal{C}a' = a'$. In other words,
+_Theorem_: Coalition operators map every element in state space to a fixed point, i.e. for a coalition operator $\mathcal{C}$, $a' = \mathcal{C}a$ is a fixed point of $\mathcal{C}$ for any $a \in A$, i.e. $\mathcal{C}a' = a'$. In other words, coalition operators are _idempotent_
 $$\mathcal{C}^2 = \mathcal{C}.$$
 Moreover, any state is either a fixed point or in the attracting set of a $\mathcal{C}$.
 
+For a state space with $S$ number of elements, there are $\sum_{k=0}^S {S \choose k} k^{S-k}$ number of idempotent functions.
 
 We can flesh out this landscape of fixed points and attracting sets with two approaches. One is to construct a metric space $(A, d)$, i.e. impose a measure of distance between states; the other is to represent our system of states and operators in terms of linear algebra.
 
@@ -138,6 +139,30 @@ _Points to Explore_:
 
 - Decomposition of operators into tensor products: what is the significance? look at high order svd.
 
+## Sequence independent Fixed Points
+We consider the conditions for a state to be a fixed point of a sequence of coalitions.
+
+### Single agents
+If each agent are acting as individuals, a state is a fixed point of any sequence of individuals if and only if it is the (pure) Nash equilibrium of the equivalent simultaneous game
+\begin{equation}
+u_i(a_i \ \lvert \ a_{-i} ) \geq u_i(a_i' \ \lvert \ a_{-i} ) \quad \forall \ a_i' \in A_i \quad \forall i \in \mathcal{I}.
+\end{equation}
+Once you arrive at a fixed point (no matter how you arrive), the sequence of operations is irrelevant. A fixed point for any sequence is a fixed point for all sequences.
+
+### Partition Coalitions
+Let the set of coalitions $K$ be a cover of the set of agents. Let
+\begin{equation}
+u_c(a_c \ \lvert \ a_{-c}) = \min_{i \in C} u_i(a_c \ \lvert \ a_{-c}).
+\end{equation}
+If $K$ is a partition of $\mathcal{I}$, i.e. coalitions in $K$ do not share any members, then the coalitions behave like individual macroscopic agents; a state is a fixed point of any sequence of such coalitions if and only if
+\begin{equation}
+u_c(a_c \ \lvert \ a_{-c} ) \geq u_i(a_c' \ \lvert \ a_{-c} ) \quad \forall \ a_c' \in A(C) \quad \forall C \in K.
+\end{equation}
+In other words, the fixed point is a fixed point of all the individual coalition operators.
+
+### Overlapping Coalitions
+
+Suppose $\mathcal{K}a = a$ is a fixed point of the coalition sequence $\mathcal{K}$. If $a$ is a Nash equilibrium it will be a fixed point. However it may be the case that as $a$ is cycled through the sequence again, it may change to other states but be returned to $a$. Moreover all points that $a$ go through in the sequence are fixed points of sequences that are cyclic permutations of $\mathcal{K}$. So with every sequence of overlapping coalitions $K$ we can associate with it an **orbit** of $\lvert K \rvert$ many elements. We may have more exotic $p$-cycle orbits of coalitions s.t. $\mathcal{K}^n a = a$ for $n = p\mathbb{Z}$. 
 
 # Summary Remarks
 
