@@ -70,6 +70,7 @@ _Points to Explore_:
  - Is there something special about the algebra of $\Gamma$?
  - How could we exploit the structure of the problem (namely, the utility matrix $u$) to design a sequence $K$ that maximises $U(a_T)$ with as few time steps $T$ as possible, or make sure $U(a_t)$ always decreases? e.g. select certain members of $C_t$ to carry forward to $C_{t+1}$ under some criteria?
  - Is it possible to actually design $K$ that decreases $U$ for a general problem?
+ - Effect of 'gerrymandering' coalitions.
 
 # Utility functions with Different Properties
 ## Independent Preferences vs Independent Payoff
@@ -90,14 +91,32 @@ Independent payoff implies independent preference, but not the other way round. 
 ## Biased Global Optimisation
 Suppose there is an overarching objective $V(a)$ that nominally all agents want to jointly optimise. Then we can model the individual agent payoffs as $u_i(a) = V(a) + \epsilon \mu_i(a)$, where $\mu_i$ represents an individual **bias** in evaluating a states of affairs; if we normalise $V,\ \mu_i \in [0,1]$, then $\epsilon$ is a measure of the relative strength of individual biases.
 
-# Classification of Coalitions
+## Zero-Sum Game
+In a **zero-sum game**,
+\begin{equation}
+\sum_{i \in \mathcal{I}} u_i(a) = 0 \quad \forall \ a \in A.
+\end{equation}
 
-## Happy Coalitions
-A **happy coalition** $C$ with respect to a state $a$ is one such that
-$$u_i(\mathcal{C} a) \geq u_i(a) \quad \forall \ i \in C.$$
-Suppose a coalition is happy for
+## Symmetric Games
+A **symmetric game** is a game where the utility of individual agents is _invariant_ under the permutation of agents. Formally, it is a game where $A_1 = A_2 = \ldots = A_N$, and for any permutation $\pi: \mathcal{I} \to \mathcal{I}$
+\begin{equation}
+u_i(a_1, \ldots, a_j, \ldots, a_N) = u_{\pi(i)}(a_{\pi(1)}, \ldots a_{\pi(j)}, \ldots a_{\pi(N)}).
+\end{equation}
 
-> Good coalitions lead to good sequences vs Co-Op objective?
+_Examples_: Prisoner's Dilemma, selfish lightbulbs
+
+Let $\varsigma_k = \{ C \in \mathcal{I} \ \lvert \ \lvert C \rvert  = k\}$ be the set of coalitions of size $k$. The image of a permutation restricted to $C$ is also a set of size $k$. Let $\pi_\sharp : \varsigma_k \to \varsigma_k$ be a map on coalitions induced my permutations such that $\pi_\sharp : (i_1, i_2, \ldots, i_k) \mapsto (\pi(i_1), \pi(i_2), \ldots, \pi(i_k))$. Since $\pi$ is bijective, $\pi_\sharp$ is also bijective; therefore $\pi_\sharp$ is a permutation on coalitions.
+
+We could construct a weighted network $(V, E, W)$ representing **coalition relationships**. The coalitions are the nodes and an edge $(i,j)$ is formed between coalitions $i$ and $j$ if they share at least one member. The weight function $W: V \times V \to \mathbb{N}_0$ computes the number of members shared by each coalition. We observe that the coalition relationships are invariant under permutations of agents.
+
+We observe that the Co-Op coalition utility function carries forward the symmetry in $u_i$:
+\begin{align}
+u_{\pi_{\sharp}(c)}(a_\pi) &= \min_{i \in \pi_\sharp (C)}u_i(a_\pi) \nonumber  \\
+                  &= \min_{i \in \pi_\sharp (C)}u_{\pi^{-1}(i)}(a) \nonumber \\
+                  &= \min_{j \in C} u_j(a) = u_c(a).
+\end{align}
+
+
 
 # Fixed Points
 A **fixed point** of an operator $\mathcal{K}$ is an element $\alpha \in A$ if $\mathcal{K}\alpha = \alpha$. Moreover it is an **attractive fixed point** if starting from an arbitrary element $a_0$ in some neighbourhood $B \subseteq A$ of $\alpha$ the sequence $\{a_t \ \lvert \ a_{t+1} = \mathcal{K} a_{t}\}$ converges to $\alpha$. $N$ is called the attracting set of $\alpha$.
@@ -114,14 +133,44 @@ Moreover, any state is either a fixed point or in the attracting set of a $\math
 
 For a state space with $S$ number of elements, there are $\sum_{k=0}^S {S \choose k} k^{S-k}$ number of idempotent functions.
 
+## Single agents
+If each agent are acting as individuals, a state is a fixed point of any sequence of individuals if and only if it is the (pure) Nash equilibrium of the equivalent simultaneous game
+\begin{equation}
+u_i(a_i \ \lvert \ a_{-i} ) \geq u_i(a_i' \ \lvert \ a_{-i} ) \quad \forall \ a_i' \in A_i \quad \forall i \in \mathcal{I}.
+\end{equation}
+Once you arrive at a fixed point (no matter how you arrive), the sequence of operations is irrelevant. A fixed point for any sequence is a fixed point for all sequences.
+
+This is equivalent to the usual **sequential game** in game theory. We assume the game has **perfect information**, there is a **subgame perfect equilibrium** that can be calculated by backward induction.
+
+## Partition Set
+A **partition set** partitions the set of agents into coalitions and assigns to each coalition a new utility function $u_c$, which is in some manner or another derived from the utilities of the constituent agents. Every agent is in one and only one coalition. We can think of the coalitions as coarse grained agents which interact in a sequential game.
+
+Let the set of coalitions $K$ be a cover of the set of agents. In the Co-Op philosophy, the utility of a coalition is
+\begin{equation}
+u_c(a_c \ \lvert \ a_{-c}) = \min_{i \in C} u_i(a_c \ \lvert \ a_{-c}).
+\end{equation}
+A state is a fixed point of any sequence of a partition set of coalitions if and only if
+\begin{equation}
+u_c(a_c \ \lvert \ a_{-c} ) \geq u_i(a_c' \ \lvert \ a_{-c} ) \quad \forall \ a_c' \in A(C) \quad \forall C \in K.
+\end{equation}
+In other words, the fixed point is a fixed point of all the individual coalition operators.
+
+N.B. An NE for individuals is not necessarily an NE for coalitions, and vice versa. 
+
+## Overlapping Coalitions
+
+Suppose $\mathcal{K}a = a$ is a fixed point of the coalition sequence $\mathcal{K}$. If $a$ is a Nash equilibrium it will be a fixed point. However it may be the case that as $a$ is cycled through the sequence again, it may change to other states but be returned to $a$. Moreover all points that $a$ go through in the sequence are fixed points of sequences that are cyclic permutations of $\mathcal{K}$. So with every sequence of overlapping coalitions $K$ we can associate with it a **limit cycle** of $\lvert K \rvert$ many elements. We may have more exotic $p$-cycles of coalitions s.t. $\mathcal{K}^n a = a$ for $n = p\mathbb{Z}$.
+
+## Other Fixed point formulations
+
 We can flesh out this landscape of fixed points and attracting sets with two approaches. One is to construct a metric space $(A, d)$, i.e. impose a measure of distance between states; the other is to represent our system of states and operators in terms of linear algebra.
 
-## Metric space approach
+### Metric space approach
 If we have a (non-empty, complete)[^4] metric space $(A,d)$, we can make use of the Banach fixed point theorem. If $\mathcal{K}$ is a contraction, i.e. $\exists q \in [0,1)$ s.t. $\forall \ \alpha, \beta \in A,\ d(\mathcal{K}\alpha, \mathcal{K}\beta) \leq  q d(\alpha, \beta)$, there exists a _unique_ attractive fixed point $\mathcal{K}\alpha^\ast = \alpha^\ast$.
 
 What remains is to choose a metric that sensibly models how There are two obvious choices for the metric $d: A \times A \to \mathbb{R}_+$. The first one is to embed $A \hookrightarrow \mathbb{R}^N$ ($N$ being the number of agents) using the utility function as a coordinate map: $a_i = u_i(a)$. This induces a Euclidean metric on $A$. However, since the ideal situation is to solve the 'Co-Op' problem, we can make a legitimate simplification and choose $(a,a') \xrightarrow{d} \lvert U(a) - U(a')\rvert$, i.e. the difference between two states is their relative performance in optimising 'Co-Op'.
 
-## Linear Algebra Approach
+### Linear Algebra Approach
 We define $V(A)$, a real vector space taking elements of $A$ as its basis $\{\varphi_a\}_{a \in A}$. Since $A = A_1 \times \cdots \times A_N$, our vector space is a tensor product space, allowing for a compact representation: $V(A_1 \times \cdots \times A_N) = V(A_1) \otimes \cdots \otimes V(A_N)$ where $\otimes$ is the _kronecker product_. $\Gamma$ induces a set of _linear_ operators $L$; if $a\xrightarrow{\mathcal{K}} a'$, there is a corresponding linear operator $l(\mathcal{K}) \in L$ such that $\varphi_a\xrightarrow{l(\mathcal{K})} \varphi_{a'}$. We have the commutative diagram:
 $$  \begin{tikzcd}
     A \arrow{r}{\mathcal{K}} \arrow{d} & A \arrow{d}\\
@@ -139,30 +188,15 @@ _Points to Explore_:
 
 - Decomposition of operators into tensor products: what is the significance? look at high order svd.
 
-## Sequence independent Fixed Points
-We consider the conditions for a state to be a fixed point of a sequence of coalitions.
+# Classification of Coalitions
 
-### Single agents
-If each agent are acting as individuals, a state is a fixed point of any sequence of individuals if and only if it is the (pure) Nash equilibrium of the equivalent simultaneous game
-\begin{equation}
-u_i(a_i \ \lvert \ a_{-i} ) \geq u_i(a_i' \ \lvert \ a_{-i} ) \quad \forall \ a_i' \in A_i \quad \forall i \in \mathcal{I}.
-\end{equation}
-Once you arrive at a fixed point (no matter how you arrive), the sequence of operations is irrelevant. A fixed point for any sequence is a fixed point for all sequences.
+## Happy Coalitions
+A **happy coalition** $C$ with respect to a state $a$ is one such that
+$$u_i(\mathcal{C} a) \geq u_i(a) \quad \forall \ i \in C.$$
+Suppose a coalition is happy for
 
-### Partition Coalitions
-Let the set of coalitions $K$ be a cover of the set of agents. Let
-\begin{equation}
-u_c(a_c \ \lvert \ a_{-c}) = \min_{i \in C} u_i(a_c \ \lvert \ a_{-c}).
-\end{equation}
-If $K$ is a partition of $\mathcal{I}$, i.e. coalitions in $K$ do not share any members, then the coalitions behave like individual macroscopic agents; a state is a fixed point of any sequence of such coalitions if and only if
-\begin{equation}
-u_c(a_c \ \lvert \ a_{-c} ) \geq u_i(a_c' \ \lvert \ a_{-c} ) \quad \forall \ a_c' \in A(C) \quad \forall C \in K.
-\end{equation}
-In other words, the fixed point is a fixed point of all the individual coalition operators.
+> Good coalitions lead to good sequences vs Co-Op objective?
 
-### Overlapping Coalitions
-
-Suppose $\mathcal{K}a = a$ is a fixed point of the coalition sequence $\mathcal{K}$. If $a$ is a Nash equilibrium it will be a fixed point. However it may be the case that as $a$ is cycled through the sequence again, it may change to other states but be returned to $a$. Moreover all points that $a$ go through in the sequence are fixed points of sequences that are cyclic permutations of $\mathcal{K}$. So with every sequence of overlapping coalitions $K$ we can associate with it an **orbit** of $\lvert K \rvert$ many elements. We may have more exotic $p$-cycle orbits of coalitions s.t. $\mathcal{K}^n a = a$ for $n = p\mathbb{Z}$. 
 
 # Summary Remarks
 
