@@ -1,7 +1,7 @@
 ---
-title: "Coordination Game"
+title: "Coordination Game, Networks and Coalitions"
 author: "Ambrose Yim (University of Oxford)"
-date: "18 May 2018"
+date: "22 May 2018"
 header-includes:
    - \usepackage{amsmath}
    - \usepackage{amsfonts}
@@ -87,6 +87,8 @@ So the total number of in-edges pointing to the coalition from outside the coalt
  N\expval{jc} - N\frac{\expval{jc}\expval{kc}}{\expval{k}} = N\expval{jc}\qty(1-\frac{\expval{kc}}{\expval{k}}).
 \end{equation}
 
+ > What is the degree distribution of those on the other end of the edges?
+
 ## Coalition constructed around seed
 
 If we follow an in-edge to its parent node, the i/o degree distribution of its parent is $\frac{k p(j,k)}{\expval{k}}$[^1]. Thus for a chosen node, the probability that its first in-edge is parented by a node with i/o-degree $(j_1, k_1)$ is $k_1p(j_1, k_1)/\expval{k}$; since each in-edge independently chooses its parent, the probability that the node has parent nodes of i/o-degrees $\qty((j_1, k_1), \ldots, (j_{j-1}, k_{j-1}))$ (labelled by some arbitrary indexing of edges) is
@@ -131,8 +133,14 @@ If we have $q(j,k) = q$ and let $s(j) = \sum_{k=1}\frac{k}{\expval{k}} p(j, k)$,
 \gamma &= q + \qty(1-q) \sum_{j=0}\gamma^{j}s(j)\ ; \qand \\
 q &= \gamma \qty(\frac{1-\sum_{j=0} \gamma^{j-1}s(j)}{1-\sum_{j=0} \gamma^js(j)})
 \end{align}
-We notice that there is an obvious trivial solution $(\gamma, q) = 0$ and $\gamma(q=1) = 1$ (while $q$ is undefined for $\gamma = 1$). Moreover since $1 \geq \gamma > 0$ and $\sum_{j=0} s(j) = 1$, $q < \gamma$, i.e. the fraction of seed nodes is less than that of the $c(j=1) = \gamma$, the fraction of in-degree $j=1$ nodes in the population that belong to the coalition. We see that $\gamma$ grows super-linear with $q$, the rate being a property of the underlying network. If we plot the graph of $\gamma (q)$ vs $q$, it starts at $(0,0)$ with slope $\lim_{q \to 0^+}\gamma ' (q) = 1^+$, continues above the line $\gamma = q$, then flattens off at exactly $q=1$. This is bad (though not unexpected) news: to take advantage of a small number of seeds - representing existing wisdom - we need a large coalition (large degree of freedom to modify node states), and the probability of correctly picking out the correct coalition nodes given $Q$ is very small.
+We notice that there is an obvious trivial solution $(\gamma, q) = 0$ and $\gamma(q=1) = 1$ (while $q$ is undefined for $\gamma = 1$). Moreover since $1 \geq \gamma > 0$ and $\sum_{j=0} s(j) = 1$, $q < \gamma$, i.e. the fraction of seed nodes is less than that of the $c(j=1) = \gamma$, the fraction of in-degree $j=1$ nodes in the population that belong to the coalition. We see that $\gamma$ grows super-linear with $q$, the rate being a property of the underlying network. If we plot the graph of $\gamma (q)$ vs $q$, it starts at $(0,0)$ with slope $\lim_{q \to 0^+}\gamma ' (q) = 1^+$, continues to grow above the line $\gamma = q$, then flattens off at exactly $q=1$. How quickly it grows and how soon it plateaus would depend on the degree distribution, but the qualitative behaviour is the same. This is bad (though not unexpected) news: to take advantage of a small number of seeds - representing existing wisdom - we need a large coalition (large degree of freedom to modify node states), and the probability of correctly picking out the correct coalition nodes given $Q$ is very small.
 
+
+### 'Crystal' growth of coalition
+
+Given some initial seed $Q$, if we pick a random node $\iota$ in the coalition and progressively grow a coalition by including nodes that are upstream of the initial node $\iota$, but stopping the inclusion along an edge when the upstream node is in $Q$, what is the size of the cluster?
+
+This is essentially a percolation question: calculations in PHYSICAL REVIEW E \textbf{66}, 015104(R) (2002) by Schwartz et al. shows that the probability of a node being downstream of a giant in-component displays critical behaviour for some $q_c$ \textbf{MORE READING}.
 
 # Wrong stuff
 
