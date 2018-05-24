@@ -1,0 +1,11 @@
+\frametitle{Recap}
+
+Each agent has a set of actions $a_i$. The actions taken by agents altogether define the `state' of the system.
+
+We associate to each agent a utility function $u_i(a)$ evaluated on the set of it's own actions and actions of other agents.
+
+We can define a directed network consisting of agents = nodes and a directed edge from agent $i$ to agent $j$ if the actions of agent $i$ afect the utility of agent $j$, i.e. $u_j(a_i)$. We call $i$ a `parent node' of $j$ and $j$ and child nodeof $i$; `i' is upstream of $j$, and $j$ is downstream of $i$. N.B. they may both influence each other.
+\begin{figure}[b]
+\centering
+\includegraphics[height=1in]{directed_network}
+\end{figure}

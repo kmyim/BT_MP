@@ -97,7 +97,7 @@ If we follow an in-edge to its parent node, the i/o degree distribution of its p
 \end{equation}
 Thus the probability that such nodes have either seed or coalition parents is
 \begin{equation}
-\Pr(\qty(j_e, k_e)_{e=1}^{j},\ \text{parents}\ \in Q\cup C \ \lvert \ j,k) = \prod_{e=1}^j\frac{k_e}{\expval{k}} p(j_e, k_e)r(j_e, k_e).
+\Pr(\qty(j_e, k_e)_{e=1}^{j},\ Q\cup C \to \iota \ \lvert \ j,k) = \prod_{e=1}^j\frac{k_e}{\expval{k}} p(j_e, k_e)r(j_e, k_e).
 \end{equation}
 Summing over all degree configurations, and observing that sum of products = product of sums
 \begin{align}
@@ -117,33 +117,58 @@ c(j,k) &= \Pr(\iota \in C \ \lvert \ d(\iota) = (j,k), Q)\\
 \end{align}
 We observe that $\frac{\expval{kr}}{\expval{k}}$ is nothing more than a constant (given some choice of $q$ and $c$), and thus $c(j,k) = c(j)$ is independent of $k$, i.e. probability of a node with i/o-degrees $(j,k)$ is in the coalition is independent of the node's out degree. If we let $c(j=1) = \gamma$, where $1 \geq \gamma > 0$,
 \begin{equation}
-c(j) = \gamma^j.
+c(j) = \gamma^j \quad \forall j = 1,2, \ldots.
 \end{equation}
-Furthermore if we assume that $Q$ was a random sample of the graph, where a node with i/o degrees $(j,k)$ is sampled with probability $q(j,k)$, then
+N.B. $c(0) = 0$. Furthermore if we assume that $Q$ was a random sample of the graph, where a node with i/o degrees $(j,k)$ is sampled with probability $q(j,k)$, then
 \begin{equation}
 r(j,k) = c(j) + q(j,k) - c(j)q(j,k).
 \end{equation}
 Then we can solve for $c(j)$ from a self-consistency solution:
 \begin{align}
-\gamma &= \sum_{k,j}\frac{k}{\expval{k}} p(j, k)\qty(q(j,k) + \gamma^{j}\qty(1-q(j,k)))\\
-&= \frac{\expval{qk}}{\expval{k}} + \sum_{j=0}\gamma^{j}\sum_{k}\frac{k}{\expval{k}} p(j, k)\qty(1-q(j,k))
+\gamma &= \sum_{k,j}\frac{k}{\expval{k}} p(j, k)\qty(q(j,k) + c(j)\qty(1-q(j,k)))\\
+&= \frac{\expval{qk}}{\expval{k}} + \sum_{j=0}c(j)\sum_{k=1}\frac{k}{\expval{k}} p(j, k)\qty(1-q(j,k)) \\
+&= \frac{\expval{qk}}{\expval{k}} + \sum_{j=1}\gamma^j\sum_{k=1}\frac{k}{\expval{k}} p(j, k)\qty(1-q(j,k))
 \end{align}
 If we have $q(j,k) = q$ and let $s(j) = \sum_{k=1}\frac{k}{\expval{k}} p(j, k)$,
 \begin{align}
-\gamma &= q + \qty(1-q) \sum_{j=0}\gamma^{j}s(j)\ ; \qand \\
-q &= \gamma \qty(\frac{1-\sum_{j=0} \gamma^{j-1}s(j)}{1-\sum_{j=0} \gamma^js(j)})
+\gamma &= q + \qty(1-q) \sum_{j=1}\gamma^{j}s(j)\ ; \qand \\
+q &= \gamma \qty(\frac{1-\sum_{j=1} \gamma^{j-1}s(j)}{1-\sum_{j=1} \gamma^js(j)})
 \end{align}
-We notice that there is an obvious trivial solution $(\gamma, q) = 0$ and $\gamma(q=1) = 1$ (while $q$ is undefined for $\gamma = 1$). Moreover since $1 \geq \gamma > 0$ and $\sum_{j=0} s(j) = 1$, $q < \gamma$, i.e. the fraction of seed nodes is less than that of the $c(j=1) = \gamma$, the fraction of in-degree $j=1$ nodes in the population that belong to the coalition. We see that $\gamma$ grows super-linear with $q$, the rate being a property of the underlying network. If we plot the graph of $\gamma (q)$ vs $q$, it starts at $(0,0)$ with slope $\lim_{q \to 0^+}\gamma ' (q) = 1^+$, continues to grow above the line $\gamma = q$, then flattens off at exactly $q=1$. How quickly it grows and how soon it plateaus would depend on the degree distribution, but the qualitative behaviour is the same. This is bad (though not unexpected) news: to take advantage of a small number of seeds - representing existing wisdom - we need a large coalition (large degree of freedom to modify node states), and the probability of correctly picking out the correct coalition nodes given $Q$ is very small.
+We notice that there is are obvious trivial solutions $(\gamma, q) = 0$ and $\gamma(q=1) = 1$, while $q$ is undefined for $\gamma = 1$ and $s(0) = 0$ (where $p(j=0, k \neq 0)=0$). This is sign of \textbf{critical behaviour}. If $s(0) = 0$, performing an asymptotic expansion $\gamma = 1-\epsilon$, we find that $q$ becomes undefined if
+\begin{equation}
+q > 1 - \frac{\expval{k}}{\expval{jk}} = q_c.
+\end{equation}
+In other words, if we have more than $Nq_c$ seeds node $Q$, the size of the set of nodes $C$ that is downstream of $Q$ or $C$ is the whole network. This is automatically satisfied if $\expval{kj} = \expval{k}$, loosely meaning that nodes on average have one in-edge and one out-edge i.e. the network is very close to a chain. In addition, this critical value coincides with with the threshold percolation value for the existence of a \textbf{giant connected component} after removing a fraction $q$ of nodes from the network.
+
+# Stochastic Block Model
+
+In a stochastic block model we impose additional information on the nodes. The set of nodes are evenly partitioned into $B$ 'blocks' labelled by $\beta$; for two nodes $a$ and $b$ in blocks $\beta$ and $\beta '$ respectively, the probability of $a \to b$ is
+\begin{equation}
+\Pr(a \to b \ \lvert \ a \in \beta,\ b \in \beta ') = \frac{k_a j_b}{m}\omega(\beta, \beta ').
+\end{equation}
+where $\omega(\beta, \beta')$ is a weight that controls the probability of a node in $\beta$ begin the parent of a node in $\beta'$.
+
+We can make further simplifying assumptions of the 'Planted Partition Model': we let $\omega(\beta, \beta) = \omega_i$ $\forall \beta \in B$ and $\omega(\beta, \beta') = \omega_o$ $\forall \beta \neq \beta' \in B$.
+
+We can calculate the probability of a node in $\beta_0$ with i/o-degrees $(j,k)$ in $C$ given random seeds $Q$ and the fact that some node in $\beta_1$ is in $C$. We denote this probability $c(j,k, \beta_0 \ \lvert\ \beta_1)$. Like the calculations above in a configuration model, we get
+\begin{equation}
+c(j,k, \beta_0 \ \lvert \ \beta_1) = \qty(\frac{\expval{kq}}{\expval{k}} - \expval{k(1-q)\qty(\omega_o c(j,k, \beta_1 \ \lvert \beta_1) + (\omega_i + (B-2)\omega_o ) c(j,k,\beta_0 \ \lvert \ \beta_1))}/ \expval{k})^j
+\end{equation}
+Similarly, we can calculate the probability of a node in a block being in the coalition given that another node in the block is also in the coalition:
+\begin{equation}
+c(j,k, \beta_1 \ \lvert \ \beta_1) = \qty(\frac{\expval{kq}}{\expval{k}} - \expval{k(1-q)\qty(\omega_i c(j,k, \beta_1 \ \lvert \beta_1) + (B-1)\omega_o c(j,k,\beta_0 \ \lvert \ \beta_1))}/ \expval{k})^j
+\end{equation}
+We make the similar observation that the probabilities are independent of out-degree $k$; letting $c(j, \beta_0 \ \lvert \ \beta_1) = \gamma_{01}^j$ and $c(j, \beta_1 \ \lvert \ \beta_1) = \gamma_{11}^j$, we have
+\begin{align}
+\gamma_{01} &= \frac{\expval{qk}}{\expval{k}} + \sum_{j}\qty(\omega_o\gamma_{11}^j + \qty(\omega_i + (B-2)\omega_o)\gamma_{01}^j )\qty(\sum_k \frac{k}{\expval{k}}p(j,k)(1-q(j,k))) \\
+\gamma_{11} &= \frac{\expval{qk}}{\expval{k}} + \sum_{j}\qty(\omega_i\gamma_{11}^j +  (B-1)\omega_o\gamma_{01}^j )\qty(\sum_k \frac{k}{\expval{k}}p(j,k)(1-q(j,k)))
+\end{align}
+We can make a few preliminary observations: if nodes within blocks are highly associative, in the sense that $B\omega_0 \ll 1$, then the two equations decouple and we reduces to the form for $\gamma$ in the standard configuration model.
 
 
-### 'Crystal' growth of coalition
 
-Given some initial seed $Q$, if we pick a random node $\iota$ in the coalition and progressively grow a coalition by including nodes that are upstream of the initial node $\iota$, but stopping the inclusion along an edge when the upstream node is in $Q$, what is the size of the cluster?
-
-This is essentially a percolation question: calculations in PHYSICAL REVIEW E \textbf{66}, 015104(R) (2002) by Schwartz et al. shows that the probability of a node being downstream of a giant in-component displays critical behaviour for some $q_c$ \textbf{MORE READING}.
 
 # Wrong stuff
-
 
 #### Coalition is a random sample
 
@@ -175,6 +200,17 @@ If coalitions and seeds are randomly, independently and uniformly sampled, i.e $
 \Pr(\iota \in C,\ Q\cup C \rightarrow \iota ) &= c \qty(G_{in}^c\qty(q+c-qc) - p(0)); \\
 \Pr(Q\cup C \rightarrow \iota \ \lvert \ \iota \in C) &= G_{in}^c\qty(q+c-qc) - p(0)
 \end{align}
+
+## Coalition constructed around seed
+
+Moreover since $1 \geq \gamma > 0$ and $\sum_{j=0} s(j) = 1$, $q < \gamma$, i.e. the fraction of seed nodes is less than that of the $c(j=1) = \gamma$, the fraction of in-degree $j=1$ nodes in the population that belong to the coalition. We see that $\gamma$ grows super-linear with $q$, the rate being a property of the underlying network. If we plot the graph of $\gamma (q)$ vs $q$, it starts at $(0,0)$ with slope $\lim_{q \to 0^+}\gamma ' (q) = 1^+$, continues to grow above the line $\gamma = q$, then flattens off at exactly $q=1$. How quickly it grows and how soon it plateaus would depend on the degree distribution, but the qualitative behaviour is the same. This is bad (though not unexpected) news: to take advantage of a small number of seeds - representing existing wisdom - we need a large coalition (large degree of freedom to modify node states), and the probability of correctly picking out the correct coalition nodes given $Q$ is very small.
+
+### 'Crystal' growth of coalition
+
+Given some initial seed $Q$, if we pick a random node $\iota$ in the coalition and progressively grow a coalition by including nodes that are upstream of the initial node $\iota$, but stopping the inclusion along an edge when the upstream node is in $Q$, what is the size of the cluster?
+
+This is essentially a percolation question: calculations in PHYSICAL REVIEW E \textbf{66}, 015104(R) (2002) by Schwartz et al. shows that the probability of a node being downstream of a giant in-component displays critical behaviour for some $q_c$ \textbf{MORE READING}.
+
 
 
 [^1]: N.B. we have assumed that there are sufficiently many nodes such that the probability of self-edges $\sim \order{N^{-1}}$ is vanishingly small.
