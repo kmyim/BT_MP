@@ -155,7 +155,7 @@ u_c(a_c \ \lvert \ a_{-c} ) \geq u_i(a_c' \ \lvert \ a_{-c} ) \quad \forall \ a_
 \end{equation}
 In other words, the fixed point is a fixed point of all the individual coalition operators.
 
-N.B. An NE for individuals is not necessarily an NE for coalitions, and vice versa. 
+N.B. An NE for individuals is not necessarily an NE for coalitions, and vice versa.
 
 ## Overlapping Coalitions
 

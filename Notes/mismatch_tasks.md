@@ -80,7 +80,7 @@ Putting everything together:
 \begin{equation}
 G(z) = e^{-\lambda(M-1)}\qty(\qty(1-e^{-\lambda})e^{\lambda z} + 1)^{M-2} + \qty(1-e^{-\lambda})z^n \qty(1-e^{-\lambda}(1-e^{\lambda/z -\lambda}))^{M-2}
 \end{equation}
-However this is a very unsavoury generating function due to the singularity at $z=0$. To obtain a more cosmetically appealing (and numerically friendly) solution, we make an additional simplifying assumption, that $\omega_{A\alpha} \sim \text{Po}(n-(M-1)\lambda)$. After plugging this into mathematica we get
+However this is a very unsavoury generating function due to the singularity at $z=0$. To obtain a more cosmetically appealing (and numerically friendly) solution, we make an additional simplifying assumption, that $w_{A\alpha} \sim \text{Po}(n-(M-1)\lambda)$. After plugging this into mathematica we get
 \begin{equation}
 G(z) = e^{\lambda -\lambda  M-n} \left(\left(e^{\lambda }-1\right) e^{\lambda  (z-1)}+1\right)^{M-2} \left(e^{\lambda  (M-1)}-e^{\lambda  (M+z-2)}+e^{n+\lambda  (z-1)}\right) \left(\left(e^{\lambda }-1\right)
    e^{(z-1) (\lambda -\lambda  M+n)}+1\right).
