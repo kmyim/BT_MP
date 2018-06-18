@@ -1,0 +1,517 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.6 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{nty/global}
+    \entry{brummitt_multiplexity-facilitated_2012}{article}{}
+      \name{author}{3}{}{%
+        {{hash=77fa1e9bd416b5ceda183ca4cd52974b}{%
+           family={Brummitt},
+           family_i={B\bibinitperiod},
+           given={Charles\bibnamedelima D.},
+           given_i={C\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=df8faf24d0cfb5b2f746ad75f2ed210e}{%
+           family={Lee},
+           family_i={L\bibinitperiod},
+           given={Kyu-Min},
+           given_i={K\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=e2e89f5ce379ee38f6ce34776bbd1439}{%
+           family={Goh},
+           family_i={G\bibinitperiod},
+           given={K.-I.},
+           given_i={K\bibinithyphendelim I\bibinitperiod}}}%
+      }
+      \strng{namehash}{96b2ab280422624b6a14c0f015638fb5}
+      \strng{fullhash}{96b2ab280422624b6a14c0f015638fb5}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Elements of networks interact in many ways, so modeling them with graphs requires multiple types of edges (or network layers). Here we show that such multiplex networks are generically more vulnerable to global cascades than simplex networks. We generalize the threshold cascade model [Watts, Proc. Natl. Acad. Sci. {USA} 99, 5766 (2002)] to multiplex networks, in which a node activates if a sufficiently large fraction of neighbors in any layer are active. We show that both combining layers (i.e., realizing other interactions play a role) and splitting a network into layers (i.e., recognizing distinct kinds of interactions) facilitate cascades. Notably, layers unsusceptible to global cascades can cooperatively achieve them if coupled. On one hand, this suggests fundamental limitations on predicting cascades without full knowledge of a system's multiplexity; on the other hand, it offers feasible means to control cascades by introducing or removing sparse layers in an existing network.}
+      \field{day}{27}
+      \field{journaltitle}{Physical Review E}
+      \field{month}{04}
+      \field{number}{4}
+      \field{shortjournal}{Phys. Rev. E}
+      \field{title}{Multiplexity-facilitated cascades in networks}
+      \field{urlday}{30}
+      \field{urlmonth}{05}
+      \field{urlyear}{2018}
+      \field{volume}{85}
+      \field{year}{2012}
+      \field{pages}{045102}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevE.85.045102
+      \endverb
+      \verb{file}
+      \verb APS Snapshot:/home/user/Zotero/storage/53TCLYGG/PhysRevE.85.html:text/html;Brummitt et al. - 2012 - Multiplexity-facilitated cascades in networks.pdf:/home/user/Zotero/storage/LMCH849T/Brummitt et al. - 2012 - Multiplexity-facilitated cascades in networks.pdf:application/pdf
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevE.85.045102
+      \endverb
+    \endentry
+    \entry{erdos_random_1959}{article}{}
+      \name{author}{2}{}{%
+        {{hash=70d9d408fdee7264b5dc9b333c733318}{%
+           family={Erdös},
+           family_i={E\bibinitperiod},
+           given={P},
+           given_i={P\bibinitperiod}}}%
+        {{hash=521964110ba87bcde0674f8657ab7287}{%
+           family={Rényi},
+           family_i={R\bibinitperiod},
+           given={A},
+           given_i={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{8787ea52c0f045e5bb3bc6654390d04e}
+      \strng{fullhash}{8787ea52c0f045e5bb3bc6654390d04e}
+      \field{sortinit}{E}
+      \field{sortinithash}{fefc5210ef4721525b2a478df41efcd4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Publicationes Mathematicae (Debrecen)}
+      \field{title}{On random graphs, I}
+      \field{urlday}{17}
+      \field{urlmonth}{06}
+      \field{urlyear}{2018}
+      \field{volume}{6}
+      \field{year}{1959}
+      \field{pages}{290\bibrangedash 297}
+      \range{pages}{8}
+      \verb{file}
+      \verb 1959-11.pdf:/home/user/Zotero/storage/QQD3SVLR/1959-11.pdf:application/pdf
+      \endverb
+      \verb{url}
+      \verb http://www.renyi.hu/~p_erdos/Erdos.html#1959-11
+      \endverb
+      \keyw{graphs,random}
+    \endentry
+    \entry{gleeson_seed_2007}{article}{}
+      \name{author}{2}{}{%
+        {{hash=25b77277991a2ad79617bfae1a8a05ae}{%
+           family={Gleeson},
+           family_i={G\bibinitperiod},
+           given={James\bibnamedelima P.},
+           given_i={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=39cc5b1ac43ff87e171257b865bffa29}{%
+           family={Cahalane},
+           family_i={C\bibinitperiod},
+           given={Diarmuid\bibnamedelima J.},
+           given_i={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1354cb074c14c452f7836a07a2fb45c}
+      \strng{fullhash}{f1354cb074c14c452f7836a07a2fb45c}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{03}
+      \field{issn}{1539-3755, 1550-2376}
+      \field{journaltitle}{Physical Review E}
+      \field{langid}{english}
+      \field{month}{05}
+      \field{number}{5}
+      \field{title}{Seed size strongly affects cascades on random networks}
+      \field{urlday}{30}
+      \field{urlmonth}{05}
+      \field{urlyear}{2018}
+      \field{volume}{75}
+      \field{year}{2007}
+      \verb{doi}
+      \verb 10.1103/PhysRevE.75.056103
+      \endverb
+      \verb{file}
+      \verb Gleeson and Cahalane - 2007 - Seed size strongly affects cascades on random netw.pdf:/home/user/Zotero/storage/2MLPQWQ3/Gleeson and Cahalane - 2007 - Seed size strongly affects cascades on random netw.pdf:application/pdf
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevE.75.056103
+      \endverb
+    \endentry
+    \entry{granell_dynamical_2013}{article}{}
+      \name{author}{3}{}{%
+        {{hash=327371d583df9de17b66667a7ea91f61}{%
+           family={Granell},
+           family_i={G\bibinitperiod},
+           given={Clara},
+           given_i={C\bibinitperiod}}}%
+        {{hash=c857454925fd025cd349bfaafb6b24a0}{%
+           family={Gómez},
+           family_i={G\bibinitperiod},
+           given={Sergio},
+           given_i={S\bibinitperiod}}}%
+        {{hash=6a357114624f649b1b1dedd6e3c92cbd}{%
+           family={Arenas},
+           family_i={A\bibinitperiod},
+           given={Alex},
+           given_i={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{8400d67e472f3db833c12864dc9ec8ba}
+      \strng{fullhash}{8400d67e472f3db833c12864dc9ec8ba}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{17}
+      \field{issn}{0031-9007, 1079-7114}
+      \field{journaltitle}{Physical Review Letters}
+      \field{langid}{english}
+      \field{month}{09}
+      \field{number}{12}
+      \field{title}{Dynamical Interplay between Awareness and Epidemic Spreading in Multiplex Networks}
+      \field{urlday}{13}
+      \field{urlmonth}{06}
+      \field{urlyear}{2018}
+      \field{volume}{111}
+      \field{year}{2013}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.111.128701
+      \endverb
+      \verb{file}
+      \verb Granell et al. - 2013 - Dynamical Interplay between Awareness and Epidemic.pdf:/home/user/Zotero/storage/ZX69F9AJ/Granell et al. - 2013 - Dynamical Interplay between Awareness and Epidemic.pdf:application/pdf
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.111.128701
+      \endverb
+    \endentry
+    \entry{jackson_games_2014}{report}{}
+      \name{author}{2}{}{%
+        {{hash=a54016352c21ed4c98b16c17223e246e}{%
+           family={Jackson},
+           family_i={J\bibinitperiod},
+           given={Matthew\bibnamedelima O.},
+           given_i={M\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{hash=c106d0f9c34e673893e416ce46f088ac}{%
+           family={Zenou},
+           family_i={Z\bibinitperiod},
+           given={Yves},
+           given_i={Y\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Social Science Research Network}%
+      }
+      \list{location}{1}{%
+        {Rochester, {NY}}%
+      }
+      \strng{namehash}{185510bf6faa382cc7297ce9da300680}
+      \strng{fullhash}{185510bf6faa382cc7297ce9da300680}
+      \field{sortinit}{J}
+      \field{sortinithash}{ec3950a647c092421b9fcca6d819504a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We provide an overview and synthesis of the literatures analyzing games in which players are connected via a network structure. We discuss, in particular, the impact of the structure of the network on individuals' behaviors. We focus on game theoretic modeling, but also include some discussion of analyses of peer effects, as well as applications to diffusion, employment, crime, industrial organization, and education.}
+      \field{day}{01}
+      \field{langid}{english}
+      \field{month}{01}
+      \field{number}{{ID} 2136179}
+      \field{title}{Games on Networks}
+      \field{type}{{SSRN} Scholarly Paper}
+      \field{urlday}{09}
+      \field{urlmonth}{05}
+      \field{urlyear}{2018}
+      \field{year}{2014}
+      \verb{file}
+      \verb Full Text PDF:/home/user/Zotero/storage/5RWI6DBS/Jackson and Zenou - 2014 - Games on Networks.pdf:application/pdf;Snapshot:/home/user/Zotero/storage/X6EEUPP8/papers.html:text/html
+      \endverb
+      \verb{url}
+      \verb https://papers.ssrn.com/abstract=2136179
+      \endverb
+      \keyw{games on networks,games with incomplete information,graphical games,network games,peer effects,social networks}
+    \endentry
+    \entry{karrer_stochastic_2011}{article}{}
+      \name{author}{2}{}{%
+        {{hash=8b4f260513035df036170e50abb8a1a2}{%
+           family={Karrer},
+           family_i={K\bibinitperiod},
+           given={Brian},
+           given_i={B\bibinitperiod}}}%
+        {{hash=e10496a046558ed6c27e3a9373727f7f}{%
+           family={Newman},
+           family_i={N\bibinitperiod},
+           given={M.\bibnamedelimi E.\bibnamedelimi J.},
+           given_i={M\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{11b240d23d3e00a956556bed183cdfd7}
+      \strng{fullhash}{11b240d23d3e00a956556bed183cdfd7}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Stochastic blockmodels have been proposed as a tool for detecting community structure in networks as well as for generating synthetic networks for use as benchmarks. Most blockmodels, however, ignore variation in vertex degree, making them unsuitable for applications to real-world networks, which typically display broad degree distributions that can significantly distort the results. Here we demonstrate how the generalization of blockmodels to incorporate this missing element leads to an improved objective function for community detection in complex networks. We also propose a heuristic algorithm for community detection using this objective function or its non-degree-corrected counterpart and show that the degree-corrected version dramatically outperforms the uncorrected one in both real-world and synthetic networks.}
+      \field{day}{21}
+      \field{eprinttype}{arxiv}
+      \field{issn}{1539-3755, 1550-2376}
+      \field{journaltitle}{Physical Review E}
+      \field{month}{01}
+      \field{number}{1}
+      \field{title}{Stochastic blockmodels and community structure in networks}
+      \field{urlday}{22}
+      \field{urlmonth}{05}
+      \field{urlyear}{2018}
+      \field{volume}{83}
+      \field{year}{2011}
+      \verb{doi}
+      \verb 10.1103/PhysRevE.83.016107
+      \endverb
+      \verb{eprint}
+      \verb 1008.3926
+      \endverb
+      \verb{file}
+      \verb arXiv\:1008.3926 PDF:/home/user/Zotero/storage/7MT5UVMX/Karrer and Newman - 2011 - Stochastic blockmodels and community structure in .pdf:application/pdf;arXiv.org Snapshot:/home/user/Zotero/storage/RYMWV6GZ/1008.html:text/html
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1008.3926
+      \endverb
+      \keyw{Computer Science - Social and Information Networks,Condensed Matter - Statistical Mechanics,Physics - Data Analysis,Statistics and Probability,Physics - Physics and Society}
+    \endentry
+    \entry{lee_threshold_2014}{article}{}
+      \name{author}{3}{}{%
+        {{hash=df8faf24d0cfb5b2f746ad75f2ed210e}{%
+           family={Lee},
+           family_i={L\bibinitperiod},
+           given={Kyu-Min},
+           given_i={K\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=77fa1e9bd416b5ceda183ca4cd52974b}{%
+           family={Brummitt},
+           family_i={B\bibinitperiod},
+           given={Charles\bibnamedelima D.},
+           given_i={C\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=e2e89f5ce379ee38f6ce34776bbd1439}{%
+           family={Goh},
+           family_i={G\bibinitperiod},
+           given={K.-I.},
+           given_i={K\bibinithyphendelim I\bibinitperiod}}}%
+      }
+      \strng{namehash}{cc7ea3bde6715941b800bb49e89abf3d}
+      \strng{fullhash}{cc7ea3bde6715941b800bb49e89abf3d}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Threshold cascade models have been used to describe the spread of behavior in social networks and cascades of default in financial networks. In some cases, these networks may have multiple kinds of interactions, such as distinct types of social ties or distinct types of financial liabilities; furthermore, nodes may respond in different ways to influence from their neighbors of multiple types. To start to capture such settings in a stylized way, we generalize a threshold cascade model to a multiplex network in which nodes follow one of two response rules: some nodes activate when, in at least one layer, a large enough fraction of neighbors is active, while the other nodes activate when, in all layers, a large enough fraction of neighbors is active. Varying the fractions of nodes following either rule facilitates or inhibits cascades. Near the inhibition regime, global cascades appear discontinuously as the network density increases; however, the cascade grows more slowly over time. This behavior suggests a way in which various collective phenomena in the real world could appear abruptly yet slowly.}
+      \field{day}{29}
+      \field{journaltitle}{Physical Review E}
+      \field{month}{12}
+      \field{number}{6}
+      \field{shortjournal}{Phys. Rev. E}
+      \field{title}{Threshold cascades with response heterogeneity in multiplex networks}
+      \field{urlday}{17}
+      \field{urlmonth}{06}
+      \field{urlyear}{2018}
+      \field{volume}{90}
+      \field{year}{2014}
+      \field{pages}{062816}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevE.90.062816
+      \endverb
+      \verb{file}
+      \verb APS Snapshot:/home/user/Zotero/storage/P9VT2RHU/PhysRevE.90.html:text/html
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevE.90.062816
+      \endverb
+    \endentry
+    \entry{newman_random_2001}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e10496a046558ed6c27e3a9373727f7f}{%
+           family={Newman},
+           family_i={N\bibinitperiod},
+           given={M.\bibnamedelimi E.\bibnamedelimi J.},
+           given_i={M\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=e9e44f6a67dc4ba035c6d755ffe5b9aa}{%
+           family={Strogatz},
+           family_i={S\bibinitperiod},
+           given={S.\bibnamedelimi H.},
+           given_i={S\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=212271c6c2743713134bce5443854ca9}{%
+           family={Watts},
+           family_i={W\bibinitperiod},
+           given={D.\bibnamedelimi J.},
+           given_i={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{acd5eb6cdbd94835d9120bc08b817720}
+      \strng{fullhash}{acd5eb6cdbd94835d9120bc08b817720}
+      \field{sortinit}{N}
+      \field{sortinithash}{925374ca63e7594de7fafdb83e64d41d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Recent work on the structure of social networks and the internet has focussed attention on graphs with distributions of vertex degree that are significantly different from the Poisson degree distributions that have been widely studied in the past. In this paper we develop in detail the theory of random graphs with arbitrary degree distributions. In addition to simple undirected, unipartite graphs, we examine the properties of directed and bipartite graphs. Among other results, we derive exact expressions for the position of the phase transition at which a giant component first forms, the mean component size, the size of the giant component if there is one, the mean number of vertices a certain distance away from a randomly chosen vertex, and the average vertex-vertex distance within a graph. We apply our theory to some real-world graphs, including the world-wide web and collaboration graphs of scientists and Fortune 1000 company directors. We demonstrate that in some cases random graphs with appropriate distributions of vertex degree predict with surprising accuracy the behavior of the real world, while in others there is a measurable discrepancy between theory and reality, perhaps indicating the presence of additional social structure in the network that is not captured by the random graph.}
+      \field{day}{24}
+      \field{eprinttype}{arxiv}
+      \field{issn}{1063-651X, 1095-3787}
+      \field{journaltitle}{Physical Review E}
+      \field{month}{07}
+      \field{number}{2}
+      \field{title}{Random graphs with arbitrary degree distributions and their applications}
+      \field{urlday}{18}
+      \field{urlmonth}{05}
+      \field{urlyear}{2018}
+      \field{volume}{64}
+      \field{year}{2001}
+      \verb{doi}
+      \verb 10.1103/PhysRevE.64.026118
+      \endverb
+      \verb{eprint}
+      \verb cond-mat/0007235
+      \endverb
+      \verb{file}
+      \verb arXiv\:cond-mat/0007235 PDF:/home/user/Zotero/storage/8NVQUVQ6/Newman et al. - 2001 - Random graphs with arbitrary degree distributions .pdf:application/pdf;arXiv.org Snapshot:/home/user/Zotero/storage/GCGCT7C9/0007235.html:text/html
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/cond-mat/0007235
+      \endverb
+      \keyw{Condensed Matter - Disordered Systems and Neural Networks,Condensed Matter - Statistical Mechanics}
+    \endentry
+    \entry{shoham_multiagent_2008}{book}{}
+      \name{author}{2}{}{%
+        {{hash=774e2e16526f33f383bed004b13bf326}{%
+           family={Shoham},
+           family_i={S\bibinitperiod},
+           given={Yoav},
+           given_i={Y\bibinitperiod}}}%
+        {{hash=91d47c0d6ebf96d50082140932162381}{%
+           family={Leyton-Brown},
+           family_i={L\bibinithyphendelim B\bibinitperiod},
+           given={Kevin},
+           given_i={K\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{a8425ae9eea5ffe62c10cc31270be58e}
+      \strng{fullhash}{a8425ae9eea5ffe62c10cc31270be58e}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{isbn}{978-0-511-81165-4}
+      \field{langid}{english}
+      \field{shorttitle}{Multiagent Systems}
+      \field{title}{Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations}
+      \field{urlday}{29}
+      \field{urlmonth}{03}
+      \field{urlyear}{2018}
+      \field{year}{2008}
+      \verb{doi}
+      \verb 10.1017/CBO9780511811654
+      \endverb
+      \verb{file}
+      \verb Shoham and Leyton-Brown - 2008 - Multiagent Systems Algorithmic, Game-Theoretic, a.pdf:/home/user/Zotero/storage/LAFNLZAS/Shoham and Leyton-Brown - 2008 - Multiagent Systems Algorithmic, Game-Theoretic, a.pdf:application/pdf
+      \endverb
+      \verb{url}
+      \verb http://ebooks.cambridge.org/ref/id/CBO9780511811654
+      \endverb
+    \endentry
+    \entry{wang_social_2018}{article}{}
+      \name{author}{3}{}{%
+        {{hash=f27ec46ccd272a021fd78bdac92dd490}{%
+           family={Wang},
+           family_i={W\bibinitperiod},
+           given={Wei},
+           given_i={W\bibinitperiod}}}%
+        {{hash=39de14405b8b2f4f9676d4ebad785b30}{%
+           family={Cai},
+           family_i={C\bibinitperiod},
+           given={Meng},
+           given_i={M\bibinitperiod}}}%
+        {{hash=02dea5584b6acc607a53a3afbb979aea}{%
+           family={Zheng},
+           family_i={Z\bibinitperiod},
+           given={Muhua},
+           given_i={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{36e309b78308d76755b811382d90d885}
+      \strng{fullhash}{36e309b78308d76755b811382d90d885}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The existence of interlayer degree correlations has been disclosed by abundant multiplex network analysis. However, how they impose on the dynamics of social contagions are remain largely unknown. In this paper, we propose a non-Markovian social contagion model in multiplex networks with inter-layer degree correlations to delineate the behavior spreading, and develop an edge-based compartmental ({EBC}) theory to describe the model. We find that multiplex networks promote the final behavior adoption size. Remarkably, it can be observed that the growth pattern of the final behavior adoption size, versus the behavioral information transmission probability, changes from discontinuous to continuous once decreasing the behavior adoption threshold in one layer. We finally unravel that the inter-layer degree correlations play a role on the final behavior adoption size but have no effects on the growth pattern, which is coincidence with our prediction by using the suggested theory.}
+      \field{day}{01}
+      \field{issn}{0378-4371}
+      \field{journaltitle}{Physica A: Statistical Mechanics and its Applications}
+      \field{month}{06}
+      \field{shortjournal}{Physica A: Statistical Mechanics and its Applications}
+      \field{title}{Social contagions on correlated multiplex networks}
+      \field{urlday}{30}
+      \field{urlmonth}{05}
+      \field{urlyear}{2018}
+      \field{volume}{499}
+      \field{year}{2018}
+      \field{pages}{121\bibrangedash 128}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.physa.2017.12.081
+      \endverb
+      \verb{file}
+      \verb ScienceDirect Full Text PDF:/home/user/Zotero/storage/K4XTU4BP/Wang et al. - 2018 - Social contagions on correlated multiplex networks.pdf:application/pdf;ScienceDirect Snapshot:/home/user/Zotero/storage/T3NMNYLX/S0378437117313304.html:text/html
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0378437117313304
+      \endverb
+      \keyw{Complex networks,Social contagions,Spreading dynamics}
+    \endentry
+    \entry{watts_simple_2002}{article}{}
+      \name{author}{1}{}{%
+        {{hash=355c0156bd97f572f7f4722ac24de548}{%
+           family={Watts},
+           family_i={W\bibinitperiod},
+           given={Duncan\bibnamedelima J.},
+           given_i={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{355c0156bd97f572f7f4722ac24de548}
+      \strng{fullhash}{355c0156bd97f572f7f4722ac24de548}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The origin of large but rare cascades that are triggered by small initial shocks is a phenomenon that manifests itself as diversely as cultural fads, collective action, the diffusion of norms and innovations, and cascading failures in infrastructure and organizational networks. This paper presents a possible explanation of this phenomenon in terms of a sparse, random network of interacting agents whose decisions are determined by the actions of their neighbors according to a simple threshold rule. Two regimes are identified in which the network is susceptible to very large cascades—herein called global cascades—that occur very rarely. When cascade propagation is limited by the connectivity of the network, a power law distribution of cascade sizes is observed, analogous to the cluster size distribution in standard percolation theory and avalanches in self-organized criticality. But when the network is highly connected, cascade propagation is limited instead by the local stability of the nodes themselves, and the size distribution of cascades is bimodal, implying a more extreme kind of instability that is correspondingly harder to anticipate. In the first regime, where the distribution of network neighbors is highly skewed, it is found that the most connected nodes are far more likely than average nodes to trigger cascades, but not in the second regime. Finally, it is shown that heterogeneity plays an ambiguous role in determining a system's stability: increasingly heterogeneous thresholds make the system more vulnerable to global cascades; but an increasingly heterogeneous degree distribution makes it less vulnerable.}
+      \field{day}{30}
+      \field{issn}{0027-8424, 1091-6490}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences}
+      \field{langid}{english}
+      \field{month}{04}
+      \field{number}{9}
+      \field{shortjournal}{{PNAS}}
+      \field{title}{A simple model of global cascades on random networks}
+      \field{urlday}{29}
+      \field{urlmonth}{05}
+      \field{urlyear}{2018}
+      \field{volume}{99}
+      \field{year}{2002}
+      \field{pages}{5766\bibrangedash 5771}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1073/pnas.082090499
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:/home/user/Zotero/storage/M4ICW9C6/Watts - 2002 - A simple model of global cascades on random networ.pdf:application/pdf;Snapshot:/home/user/Zotero/storage/VIQ5ZZHC/5766.html:text/html
+      \endverb
+      \verb{url}
+      \verb http://www.pnas.org/content/99/9/5766
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

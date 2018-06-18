@@ -1,0 +1,15 @@
+[0] Config.pm:340> INFO - This is Biber 2.4
+[1] Config.pm:343> INFO - Logfile is 'InfommReportEx.blg'
+[53] biber:287> INFO - === Mon Jun 18, 2018, 06:21:50
+[165] Biber.pm:348> INFO - Reading 'InfommReportEx.bcf'
+[332] Biber.pm:742> INFO - Found 9 citekeys in bib section 0
+[338] Biber.pm:3151> INFO - Processing section 0
+[382] Biber.pm:3308> INFO - Looking for bibtex format file 'BT_final_refs.bib' for section 0
+[469] bibtex.pm:1113> INFO - Decoding LaTeX character macros into UTF-8
+[542] bibtex.pm:974> INFO - Found BibTeX data source 'BT_final_refs.bib'
+[799] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[799] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[800] Biber.pm:3028> INFO - Sorting list 'nty/global' of type 'entry' with scheme 'nty' and locale 'en-US'
+[800] Biber.pm:3032> INFO - No sort tailoring available for locale 'en-US'
+[819] bbl.pm:519> INFO - Writing 'InfommReportEx.bbl' with encoding 'UTF-8'
+[906] bbl.pm:615> INFO - Output to InfommReportEx.bbl

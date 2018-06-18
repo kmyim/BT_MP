@@ -1,0 +1,17 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Introduction}{3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Model}{4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Theory Review}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Game-theoretic results}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}Watts-Gleeson theory of single network contagion}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Simulations}{11}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Conclusions}{12}
