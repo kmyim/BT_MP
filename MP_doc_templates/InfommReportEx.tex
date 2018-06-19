@@ -79,7 +79,7 @@ The nodes update their actions according to the following rules which is widely 
 We consider two classes of random networks. The first class are Erdős-Renyi graphs \cite{erdos_random_1959} where an edge between two nodes is present in the graph with probability $p$. The second class of networks are `planted partition models' \cite{karrer_stochastic_2011}, where agents are partitioned into tightly connected communities with only a few edges between agents int different communities. The first class is amenable to analytical analysis while we will make empirical observations about the properties of the latter from simulations.
 
 
-\section{Theory Review}
+\section{Theory}
 
 \subsection{Game-theoretic results}
 \subsection{Watts-Gleeson theory of single network contagion}
@@ -110,36 +110,67 @@ g(q) = \sum_{k=1}^\infty \frac{k}{z}p_k\sum_{m=0}^{k-1}B^{k-1}_m(q)F(m/k).
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.6\textwidth]{figures/single_layer_gq}
-\caption{$g(q)-q$ for parameters $z=4$;  sold is $r=0.35$, dashed is $r=0.371$}
+\caption{ \label{fig:stability_plot} $g(q)-q$ for parameters $z=4$;  solid is $r=0.35$, dashed is $r=0.371$}
 \end{figure}
 
-We are interested in the dynamics in the $\rho_0 \to 0$ limit and thus focus our attention on the dynamical behaviour of the recursion $q_{n+1} \leftarrow g(q_n)$. In particular, we would like to find the fixed points of the recursion and assess its stability. Gleeson demonstrated that in certain regimes of parameter space $(z,r)$, there are multiple fixed points $q_\infty(z,r)$ and these fixed points display bifurcating behaviour. Here we reproduce several plots from Gleeson's paper. Let us consider several cross sections of the $q_\infty(z,r)$, where we fix the adoption threshold parameter $r$ and vary the mean degree of the network $z$.  At small values of $r$, we see a single stable fixed point, with $q_\infty$ smoothly increasing as we increase $z$. The growth of $q_\infty$ becomes rather steep in some region of $z$ and levels off to a value close to 1 at large values of $z$. At a critical value of $r$ multiple fixed points appear with alternating stability and we observe several saddle point bifurcations. Since we iterate $q$ from $q_0 \ll 1$, the system will always end up on the lowest possible branch. We observe that in some intermediate regime of the threshold parameter there are discontinuous upward and downward leaps between lower branches of $q_\infty$, where the infection is contained, and the upper branches, where the infection is extensive in the system. In the last plot where $r$ is large, iterating $q$ from $0$ will alway lead to system to the lower branch of $q_\infty$ and the infection will never be extensive.
+We are interested in the dynamics in the $\rho_0 \to 0$ limit and thus focus our attention on the dynamical behaviour of the recursion $q_{n+1} \leftarrow g(q_n)$. In particular, we would like to find the fixed points of the recursion and assess its stability. Gleeson demonstrated that in certain regimes of parameter space $(z,r)$, there are multiple fixed points $q_\infty(z,r)$ and these fixed points display bifurcating behaviour. Here we reproduce some results from Gleeson's paper. To better understand the effect of $(z,r)$ on the stability of the fixed points, we plot $g(q)-q$ vs $q$ for $z=4$ and $r=0.35$, $r=0.371$ in figure \ref{fig:stability_plot}. We see that for the lower threshold value $r=0.35$ (solid curve) there is only one fixed point $q_\infty$ (the intersection with the horizontal axis) close to one. This fixed point attracts any value of $q$, since for $q < q_\infty$ the change in $q$ per update $g(q)-q$ is positive; and for $q > q_\infty$ we see that $g(q)-q $ is negative. The iterative update of $q$ starting from any point away from $q_\infty$ would converge onto $q_\infty$. However, as we increase $r$, the rate curve $g(q)-q$ deforms continuously until at some critical point there are three roots of $g(q)-q$, as in the case of $r=0.371$ in figure \ref{fig:stability_plot}. Two of the roots outer roots are stable but the inner root is unstable. If we consider iterations from $q_0$ close to 0, it would never reach the fixed point close to one and the infection would not be extensive across the population.
+
+
 
 \begin{figure}
     \centering
     \begin{subfigure}[b]{0.8\textwidth}
         \includegraphics[width=\textwidth]{figures/one_layer_qz_r035}
     \end{subfigure}
+
     ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
       %(or a blank line to force the subfigure onto a new line)
     \begin{subfigure}[b]{0.8\textwidth}
         \includegraphics[width=\textwidth]{figures/one_layer_qz_r0371}
     \end{subfigure}
+
     ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
     %(or a blank line to force the subfigure onto a new line)
     \begin{subfigure}[b]{0.8\textwidth}
         \includegraphics[width=\textwidth]{figures/one_layer_qz_r0375}
     \end{subfigure}
-    \caption{Fixed point plot for increasing $r$. Note Goldilocks zone in middle figure.}
+
+    \caption{Fixed points of $q$ for increasing $r$. \label{fig:single_qz}.}
+\end{figure}
+
+
+Let us consider several cross sections of the $q_\infty(z,r)$. In figure \ref{fig:single_qz} we fix the adoption threshold parameter $r$ and vary the mean degree of the network $z$.  At small values of $r$, we see a single stable fixed point, with $q_\infty$ smoothly increasing as we increase $z$. The growth of $q_\infty$ becomes rather steep in some region of $z$ and levels off to a value close to 1 at large values of $z$. At a critical value of $r$ multiple fixed points appear with alternating stability and we observe several saddle point bifurcations. Since we iterate $q$ from $q_0 \ll 1$, the system will always end up on the lowest possible branch. We observe that in some intermediate regime of the threshold parameter there are discontinuous upward and downward leaps between lower branches of $q_\infty$, where the infection is contained, and the upper branches, where the infection is extensive in the system. In the last plot where $r$ is large, iterating $q$ from $0$ will alway lead to system to the lower branch of $q_\infty$ and the infection will never be extensive.
+
+We could instead fix $z$ and examine the effects of varying $r$. We observe the same discontinuous transitions in \ref{fig:single_qr}. For $z=2$, increasing the threshold parameter $r$ smoothly decreases $q_\infty$. However, at $z=6$ a saddle node bifurcation appears around $r \approx 0.37$ and $q_\infty$ drops discontinuously from the upper branch ($q$ close to 1) to the lower branch ($q \sim \order{10^-1}$).
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.8\textwidth}
+        \includegraphics[width=\textwidth]{figures/one_layer_qr_z2}
+    \end{subfigure}
+
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.8\textwidth}
+        \includegraphics[width=\textwidth]{figures/one_layer_qr_z6}
+    \end{subfigure}
+
+    \caption{Fixed points of $q$ for increasing $z$. \label{fig:single_qr}.}
 \end{figure}
 
 
 
-These plots allow us to make a succinct qualitative summary of the effects of network topology and agent thresholds on the spread of ideas in a population of individuals. In the low threshold regime, the increase in network connectivity aids the spread of ideas, while in the intermediate threshold regime there is a `goldilocks zone' of values of $z$ where ideas can cascade extensively across the population; on either side of agents are either too sparsely connected for the contagion to become extensive or are become overly constrained by the influence of its neighbours too spark an initial adoption. Finally, if the threshold parameter is too large, then the infection will never cascade extensively because agents in the neighbourhood of the few available innovators are too constrained by other neighbours to adopt new ideas. Fixing $z$ across the plots, we observe that as $r$ is increased, a fixed point may drop discontinuously from the upper branch to the lower branch at some critical value of $r$.
+These plots allow us to make a succinct qualitative summary of the effects of network topology and agent thresholds on the spread of ideas in a population of individuals. In the low threshold regime, the increase in network connectivity aids the spread of ideas, while in the intermediate threshold regime there is a `goldilocks zone' of values of $z$ where ideas can cascade extensively across the population; on either side of agents are either too sparsely connected for the contagion to become extensive or are become overly constrained by the influence of its neighbours too spark an initial adoption. Finally, if the threshold parameter is too large, then the infection will never cascade extensively because agents in the neighbourhood of the few available innovators are too constrained by other neighbours to adopt new ideas. Fixing $z$ across the plots, we observe that as $r$ is increased, a fixed point may drop discontinuously from the upper branch to the lower branch at some critical value of $r$. We plot the phase transition boundary in the $(z,r)$ phase space in figure \ref{fig:single_phase}, the line across which there is a discontinuity in $q_\infty(z,r)$. To the left of the line the network has extensive ($\rho$ close to one) coordination, while to the right of the line $\rho$ is close to 0. The line terminates at a critical point $(r_c,z_c)$, which are the parameters for which the propagator $g$ has a triple root solution satisfying $g(q) - q=0$, $\dv{g}{q} -1= 0$ and $\dv[2]{g}{q} = 0$ \cite{gleeson_seed_2007}.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/single_layer_cascade}
+\caption{\label{fig:single_phase}Single Layer Erdős-Renyi Graph Phase transition boundary: discontinuity in $q_\infty(z,r)$}
+\end{figure}
 
 
-
-In the duplex system, we follow the extension on Gleeson's work by Brummitt. We have a joint distribution for the degrees in both layers $p(\vb{k}) = p(k, k')$, where $k$ denotes the degree in the social network and $k'$ denotes the degree in the dependency network. In the case where the nodes in the social network are swapped to produce the dependency network $p(\vb{k}) \to p(k)p(k')$ in the limit of a large number of swaps; by effectively relabelling the nodes in the network, given a sufficiently large number of nodes, the degree of a node in the dependency network would be uncorrelated with it's degree in social network. In the case where the edges are swapped, the degree in the dependency network is preserved, hence $p(\vb{k}) \to p(k)\delta_{k,k'}$ in the large number of swap limit.
+\subsection{Symmetric Two-layer Watts-Gleeson Theory}
+In a symmetric duplex system, we follow the extension on Gleeson's work by Lee, Brummitt and Goh in \cite{brummitt_multiplexity-facilitated_2012} and \cite{lee_threshold_2014}. We have a joint distribution for the degrees in both layers $p(\vb{k}) = p(k, k')$, where $k$ denotes the degree in the social network and $k'$ denotes the degree in the dependency network. In the case where the nodes in the social network are swapped to produce the dependency network $p(\vb{k}) \to p(k)p(k')$ in the limit of a large number of swaps; by effectively relabelling the nodes in the network, given a sufficiently large number of nodes, the degree of a node in the dependency network would be uncorrelated with it's degree in social network. In the case where the edges are swapped, the degree in the dependency network is preserved, hence $p(\vb{k}) \to p(k)\delta_{k,k'}$ in the large number of swap limit.
 
 Let $F(\vb{m}, \vb{k})$ be the response function. To simplify the analysis, we assume the threshold for the transfer of awareness in the social network and the threshold for coordination in the dependency network are independently drawn from $\mathcal{N}(r, 0.2)$; hence the response function, which is the probability that the thresholds of the node is below $m/k$ and $m'/k'$ in both networks, is simply
 \begin{equation}
@@ -149,43 +180,141 @@ where $\Phi$ is the cumulative distribution function for the normal distribution
 \begin{equation}
 \Phi(x) = \int_{-\infty}^x \frac{1}{\sqrt{2\pi \sigma}} \exp\qty(-\frac{(x-r)^2}{2\sigma^2}).
 \end{equation}
-In the duplex situation, we have the expression for final infection fraction
+In the duplex situation, we refer readers to \cite{lee_threshold_2014} for derivatoins of the expression for final infection fraction
 \begin{equation}
 \rho = \rho_0 + (1-\rho_0) \sum_{\vb{k}=0}^{\infty}p(\vb{k})\sum_{m=0}^k\sum_{m=0}^{k'}B^{k}_m(q_\infty)B^{k'}_{m'}(q'_\infty)F(\vb{m}, \vb{k})
 \end{equation}
 where $\vb{q}_\infty = (q_\infty, q'_\infty)$ is the fixed point of the recursive iteration
 \begin{equation}
-\vb{q}_{n+1} = \vb{g}(\vb{q}_n).
+\vb{q}_{n+1} = \vb{G}(\vb{q}_n).
 \end{equation}
-and the function $\vb{g}(\vb{q}) = (g(\vb{q}), g'(\vb{q}) )$ is defined to be
+and the function $\vb{G}(\vb{q}) = (G(\vb{q}), G'(\vb{q}) )$ is defined to be
 \begin{align}
-g(\vb{q}) &= \rho_0 + (1-\rho_0) \sum_{k=1}^\infty \sum_{k'=0}^\infty\frac{k}{z}p(\vb{k}) \sum_{m=0}^{k-1}\sum_{m'=0}^{k'}B^{k-1}_m(q)B^{k'}_{m'}(q')F(\vb{m}, \vb{k})\\
-g'(\vb{q}) &= \rho_0 + (1-\rho_0) \sum_{k'=1}^\infty \sum_{k=0}^\infty\frac{k'}{z}p(\vb{k}) \sum_{m'=0}^{k'-1}\sum_{m=0}^{k}B^{k'-1}_m(q')B^{k}_{m}(q)F(\vb{m}, \vb{k})
+G(\vb{q}) &= \rho_0 + (1-\rho_0) \sum_{k=1}^\infty \sum_{k'=0}^\infty\frac{k}{z}p(\vb{k}) \sum_{m=0}^{k-1}\sum_{m'=0}^{k'}B^{k-1}_m(q)B^{k'}_{m'}(q')F(\vb{m}, \vb{k})\\
+G'(\vb{q}) &= \rho_0 + (1-\rho_0) \sum_{k'=1}^\infty \sum_{k=0}^\infty\frac{k'}{z}p(\vb{k}) \sum_{m'=0}^{k'-1}\sum_{m=0}^{k}B^{k'-1}_m(q')B^{k}_{m}(q)F(\vb{m}, \vb{k})
 \end{align}
 Since we have assumed that the response thresholds in both layers are drawn from the same distribution, and by doing so making $F(\vb{m}, \vb{k})$ symmetric in the variables both network layers, we observe that
 \begin{equation}
-g(q, q') = g'(q', q).
+G(q, q') = G'(q', q).
 \end{equation}
-Thus if we assume $q_0 = q'_0 = \rho_0$, we have $q_n = q_n'$ for all $n$, and we only need to concern ourselves with one equation:
+Thus if we assume $q_0 = q'_0 (= \rho_0)$, we have $q_n = q_n'$ for all $n$, and we only need to concern ourselves with one equation:
 \begin{equation}
-g(q) = g(q, q) = \rho_0 + (1-\rho_0) \sum_{k=1}^\infty \sum_{k'=0}^\infty\frac{k}{z}p(\vb{k}) \sum_{m=0}^{k-1}\sum_{m'=0}^{k'}B^{k-1}_m(q)B^{k'}_{m'}(q)F(\vb{m}, \vb{k}).
+G(q) = G(q, q) = \rho_0 + (1-\rho_0) \sum_{k=1}^\infty \sum_{k'=0}^\infty\frac{k}{z}p(\vb{k}) \sum_{m=0}^{k-1}\sum_{m'=0}^{k'}B^{k-1}_m(q)B^{k'}_{m'}(q)F(\vb{m}, \vb{k}).
 \end{equation}
 Moreover the fact that $F(\vb{m}, \vb{k})$ is separable into  $F(\vb{m}, \vb{k}) = \Phi\qty(m/k)\Phi\qty(m'/k')$, we can make one final simplification:
 \begin{align}
 \rho &= \rho_0 + (1-\rho_0) \sum_{\vb{k}=0}^{\infty}p(\vb{k})\qty(\sum_{m=0}^k B^{k}_m(q_\infty)\Phi\qty(m/k))^2 \\
-g(q) &= \rho_0 + (1-\rho_0) \sum_{k=1}^\infty \sum_{k'=0}^\infty\frac{k}{z}p(\vb{k}) \qty(\sum_{m=0}^{k-1}B^{k-1}_m(q)\Phi\qty(m/k))\qty(\sum_{m'=0}^{k'}B^{k'}_{m'}(q)\Phi\qty(m'/k')).
+G(q) &= \rho_0 + (1-\rho_0) \sum_{k=1}^\infty \sum_{k'=0}^\infty\frac{k}{z}p(\vb{k}) \qty(\sum_{m=0}^{k-1}B^{k-1}_m(q)\Phi\qty(m/k))\qty(\sum_{m'=0}^{k'}B^{k'}_{m'}(q)\Phi\qty(m'/k')).
 \end{align}
+
+Writing $G(q) = \rho_0 + (1-\rho_0)g(q)$, the corresponding $g$ propagator for the edge swap case $p(\vb{k}) = p(k)\delta_{k,k'}$ is
+\begin{equation}
+g(q) =  \sum_{k=1}^\infty \frac{k}{z}p(k) \qty(\sum_{m=0}^{k-1}B^{k-1}_m(q)\Phi\qty(m/k))\qty(\sum_{m'=0}^{k}B^{k}_{m'}(q)\Phi\qty(m'/k))
+\end{equation}
+and the equivalent one for node swap is
+\begin{equation}
+g(q) =  \qty(\sum_{k=1}^\infty \frac{k}{z}p(k)\sum_{m=0}^{k-1}B^{k-1}_m(q)\Phi\qty(m/k))\qty(\sum_{k'=0}^\infty\sum_{m'=0}^{k'}p(k')B^{k'}_{m'}(q)\Phi\qty(m'/k')).
+\end{equation}
+
+\section{Simulations Results}
+\subsection{Two layer Erdős-Renyi Graphs}
+\subsubsection{Symmetric threshold parameter}
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.6\textwidth}
+        \includegraphics[width=\textwidth]{figures/node_swap_zr}
+    \end{subfigure}
+
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.8\textwidth}
+        \includegraphics[width=\textwidth]{figures/edge_swap_zr}
+    \end{subfigure}
+
+    \caption{Top: Simulations of Final infection size $\rho(z,r)$ for Erdős-Renyi node swap decoupling. Bottom: Final infection size $\rho(z,r)$ for Erdős-Renyi edge swap decoupling. }
+\end{figure}
+We consider the case of creating two layers of networks by taking an existing Erdős-Renyi graph, which we model as the social network, and randomly swapping all edges or nodes in the graph to create a dependency network that has decoupled from the original social network. In this set up the social and dependency threhsolds are drawn from the same distribution $\mathcal{N}(r, 0.2)$. We plot the theoretical second order cascade conditions \cite{gleeson_seed_2007} overlaid on top of simulation results of the final infection fraction $\rho_0$ of ER graphs of 10000 nodes over $50$ simulations for each data point. As the plot shows the second order cascade condition accurately captures the presence of discontinuities in the $(z,r)$ phase plane. Comparing node swap and edge swap, we see that the set of graphs that achieve infection phase under node swap is a subset of those under edge swap; edge swap decoupling admits somewhat macroscopic ($\rho \sim 0.5$) infection sizes for low degree and low threshold graphs, while agents on the same graphs would fail to coordinate if the network was decoupled by node swap. The phase transition boundary for both graphs has significantly receded to the lower threshold regime when compared to the single layer case.
+\subsubsection{Awareness by Social contact}
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.6\textwidth}
+        \includegraphics[width=\textwidth]{figures/hetero_ER_node_swap_with_single_phase}
+    \end{subfigure}
+
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.8\textwidth}
+        \includegraphics[width=\textwidth]{figures/hetero_edge_swap_ER}
+    \end{subfigure}
+
+    \caption{Awareness initiated by social contact. Top: Simulations of Final infection size $\rho(z,r)$ for Erdős-Renyi node swap decoupling. Blue line is the single layer phase transition line and white line is the two-layer symmetric cascade conditions. Bottom: Final infection size $\rho(z,r)$ for Erdős-Renyi edge swap decoupling. }
+\end{figure}
+We then considered the case where agents achieve social awareness by social contact; to be aware an agent need only have one neighbour innovating. This relaxation of social threshold in both node swap and edge swap cases significantly thickens the region of phase space where extensive infection occurs. While the region of extensive infection does not meet the phase transition boundary of the single layer case, it greatly exceeds the region of the double layer symmetric threshold model. This suggests that even after decoupling the social and dependency network, an Erdős-Renyi organisation with agents who are highly aware of innovation can innovate at dependency thresholds that are close to that of a single layer without decoupling.
 \begin{figure}
 \centering
-\includegraphics{figures/one_layer_qr_z2}
+\includegraphics[width=\textwidth]{figures/pp_single_transition_overlay}
+\caption{Final infection size phase plane of single layer planted partition graph. Blue line is the overlay of Erdős-Renyi phase transition line.}
 \end{figure}
 
+\subsection{Planted Partition Models}
+In our simulations of planted partition models, we segregate nodes into 100 communities of 100 nodes and set the average extra-community degree (number of edges with nodes in other communities per node) to 0.5, and vary the degree $z$ by increasing the intra-community degree. As a control experiment, we simulated the infection dynamics on a single layer planted partition graph model for 50 simulations per cell on the phase plane. The behaviour is remarkably similar to that of an unclustered Erdős-Renyi graph, the edge of the extensive infection region meeting the edge of the phase transition line of the single layer Erdős-Renyi graph.
 
-\section{Simulations}
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.6\textwidth}
+        \includegraphics[width=\textwidth]{figures/pp_double_node_swap_100x100.eps}
+    \end{subfigure}
 
-\newpage
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.8\textwidth}
+        \includegraphics[width=\textwidth]{figures/pp_double_edge_swap_100x100}
+    \end{subfigure}
+
+    \caption{Top: Simulations of Final infection size $\rho(z,r)$ for Planted Partition node swap decoupling. Bottom: Final infection size $\rho(z,r)$ for Planted Partition edge swap decoupling. }
+\end{figure}
+\subsubsection{Symmetric threshold parameter}
+We take an existing Planted Partition graph, which we model as the social network, and randomly swap all edges or nodes in the graph to create a dependency network that has decoupled from the original social network. For each cell in the phase diagram we conduct $50$ simulations. While the Erdős-Renyi second order cascade conditions accurately predicts the boundary of the extensive infection region in both node swap and edge swap, we observe striking differences between the actual fraction of infected nodes between the two cases. While the fraction of infected nodes after edge swaps is close to 1, the fraction of infected nodes after node swaps is close to 0.3. We believe this difference can be attributed to the fact that edge swap reduces the dependency layer to a standard Erdős-Renyi graph, while the dependency layer after node swap is still a planted partition network. In the case of edge swap, agents clustered in communities are innovating in a space of random dependencies. However, in the case of node swaps, the agents from different communities in the dependency structure are forced into social communities that have little correlation with theird dependency communities. Moreover since the extra-community degree in both layers are fixed to be 0.5 it is extremely unlikely that a node in the social network connects with a node in the same social community. A simple probability calculation suffices to illustrate the staggering combinatorial odds of retaining correlation: the probability that $m$ nodes from the same dependency community to end up in the same community in the social network is $B^100_m(1/100)$, which is a negligibly small probability for $m>2$. We also believe that this is correlated with the effect of null degree correlation between social and dependency networks after node swap. Agents with high degrees in the dependency network is unlikely to have a similarly high degree in the social network, and agents with low degress in the dependency network probabilistically would end up being more highly connected in the social network. Influential nodes thus suffer from reduced social awareness after node swap and for all their social awareness nodes with low degree of influence can only push a limited number of nodes over the dependency thresholds. Given a community structure, not only are influential nodes less socially aware, their social outlook are also more insular. Since infections under edge swap are remain extensive, we postulate that it is the combination of both effects that contribute to why decoupled planted partition networks are less effective in inducing system wide infection.
+
+Since small $q$ approximations accurately predict cascade conditions in the Watts-Gleeson theory, we surmise from the persistence of a sharp transition between regions of no infection and some infection in the simulation that the while the conditions for activating cascades, sensitive to small $q \ll 1$ behaviour, are not impeded by the community structure, it is when $q$ is no longer small that the community structure augments the penetration of infection across the network.
+
+\subsubsection{Awareness by Social contact}
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.6\textwidth}
+        \includegraphics[width=\textwidth]{figures/hetero_node_swap_pp}
+    \end{subfigure}
+
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.6\textwidth}
+        \includegraphics[width=\textwidth]{figures/hetero_edge_swap_pp}
+    \end{subfigure}
+
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.6\textwidth}
+        \includegraphics[width=\textwidth]{figures/hetero_edge_reverse_swap_pp}
+    \end{subfigure}
+
+    \caption{Social contact awareness. Top: Simulations of Final infection size $\rho(z,r)$ for Planted Partition node swap decoupling. Middle: Planted Partition node swap with ER Dependency, PP Social. Bottom: Final infection size $\rho(z,r)$ for Dependency = PP, Social = ER. }
+\end{figure}
+
+There is an extra subtlely in the case where social awareness is activated by a non-zero number of neighbours in the social network because of the asymmetry in the social and dependency thresholds. In the case of edge swap, we could either keep a planted partition network as the social network and an Erdős-Renyi graph as the dependency network, or take the Erdős-Renyi graph as the social network and overlay a Planted Partition dependency network. However as it turns out both cases show very little qualitative differences. Similar to the Erdős-Renyi case, having a low social threshold helps extend the region of population wide infection on the phase diagram beyond the case of symmetric threshold functions.
+
+In the case of node swap we see a boundary between no infection and some infection in the phase diagram, yet once again the total fraction of infection is reduced. We can conclude that while social threshold conditions affect the conditions for the initiation of cascades, it is the relationship between the topologies of the social and dependency layers that affect the extent of the infection.
+
 \section{Conclusions}
 
-
+\begin{itemize}
+\item There is a \textbf{phase transition} between very little coordination to extensive, population wide coordination at critical values of \emph{social awareness} and \emph{degree of dependency}
+\item Highly socially aware agents are safe against decoupling of social and dependency network
+\item Community networks are inflexible against solving structured problems whose dependencies do not correspond to the same community structure. (\emph{Limited horizon of infection})
+\item Cascade conditions are sensitive to social network threshold but number of infected agetns is sensitive to the decoupling between the topologies of the social and dependency networks.
+\item Future extensions: different threshold distributions, different network topologies, adaptive social networks.
+\end{itemize}
 \printbibliography
 \end{document}

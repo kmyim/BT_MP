@@ -19,6 +19,54 @@
 
 \refsection{0}
   \sortlist[entry]{nty/global}
+    \entry{brummitt_multiplexity-facilitated_2012}{article}{}
+      \name{author}{3}{}{%
+        {{hash=77fa1e9bd416b5ceda183ca4cd52974b}{%
+           family={Brummitt},
+           family_i={B\bibinitperiod},
+           given={Charles\bibnamedelima D.},
+           given_i={C\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=df8faf24d0cfb5b2f746ad75f2ed210e}{%
+           family={Lee},
+           family_i={L\bibinitperiod},
+           given={Kyu-Min},
+           given_i={K\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=e2e89f5ce379ee38f6ce34776bbd1439}{%
+           family={Goh},
+           family_i={G\bibinitperiod},
+           given={K.-I.},
+           given_i={K\bibinithyphendelim I\bibinitperiod}}}%
+      }
+      \strng{namehash}{96b2ab280422624b6a14c0f015638fb5}
+      \strng{fullhash}{96b2ab280422624b6a14c0f015638fb5}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Elements of networks interact in many ways, so modeling them with graphs requires multiple types of edges (or network layers). Here we show that such multiplex networks are generically more vulnerable to global cascades than simplex networks. We generalize the threshold cascade model [Watts, Proc. Natl. Acad. Sci. {USA} 99, 5766 (2002)] to multiplex networks, in which a node activates if a sufficiently large fraction of neighbors in any layer are active. We show that both combining layers (i.e., realizing other interactions play a role) and splitting a network into layers (i.e., recognizing distinct kinds of interactions) facilitate cascades. Notably, layers unsusceptible to global cascades can cooperatively achieve them if coupled. On one hand, this suggests fundamental limitations on predicting cascades without full knowledge of a system's multiplexity; on the other hand, it offers feasible means to control cascades by introducing or removing sparse layers in an existing network.}
+      \field{day}{27}
+      \field{journaltitle}{Physical Review E}
+      \field{month}{04}
+      \field{number}{4}
+      \field{shortjournal}{Phys. Rev. E}
+      \field{title}{Multiplexity-facilitated cascades in networks}
+      \field{urlday}{30}
+      \field{urlmonth}{05}
+      \field{urlyear}{2018}
+      \field{volume}{85}
+      \field{year}{2012}
+      \field{pages}{045102}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevE.85.045102
+      \endverb
+      \verb{file}
+      \verb APS Snapshot:/home/user/Zotero/storage/53TCLYGG/PhysRevE.85.html:text/html;Brummitt et al. - 2012 - Multiplexity-facilitated cascades in networks.pdf:/home/user/Zotero/storage/LMCH849T/Brummitt et al. - 2012 - Multiplexity-facilitated cascades in networks.pdf:application/pdf
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevE.85.045102
+      \endverb
+    \endentry
     \entry{erdos_random_1959}{article}{}
       \name{author}{2}{}{%
         {{hash=70d9d408fdee7264b5dc9b333c733318}{%

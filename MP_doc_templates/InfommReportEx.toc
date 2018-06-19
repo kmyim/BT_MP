@@ -6,12 +6,26 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2}Model}{4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Theory Review}{6}
+\contentsline {section}{\numberline {3}Theory}{6}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1}Game-theoretic results}{6}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2}Watts-Gleeson theory of single network contagion}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Simulations}{11}
+\contentsline {subsection}{\numberline {3.3}Symmetric Two-layer Watts-Gleeson Theory}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Conclusions}{12}
+\contentsline {section}{\numberline {4}Simulations Results}{13}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}Two layer Erd\IeC {\H o}s-Renyi Graphs}{13}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.1}Symmetric threshold parameter}{13}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.2}Awareness by Social contact}{16}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2}Planted Partition Models}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.2.1}Symmetric threshold parameter}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.2.2}Awareness by Social contact}{19}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Conclusions}{19}
