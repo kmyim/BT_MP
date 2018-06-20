@@ -2065,10 +2065,14 @@
     <bcf:citekey order="14">gleeson_seed_2007</bcf:citekey>
     <bcf:citekey order="15">newman_random_2001</bcf:citekey>
     <bcf:citekey order="16">gleeson_seed_2007</bcf:citekey>
-    <bcf:citekey order="17">brummitt_multiplexity-facilitated_2012</bcf:citekey>
-    <bcf:citekey order="18">lee_threshold_2014</bcf:citekey>
-    <bcf:citekey order="19">lee_threshold_2014</bcf:citekey>
-    <bcf:citekey order="20">gleeson_seed_2007</bcf:citekey>
+    <bcf:citekey order="17">lee_threshold_2014</bcf:citekey>
+    <bcf:citekey order="18">wang_social_2018</bcf:citekey>
+    <bcf:citekey order="19">brummitt_multiplexity-facilitated_2012</bcf:citekey>
+    <bcf:citekey order="20">lee_threshold_2014</bcf:citekey>
+    <bcf:citekey order="21">lee_threshold_2014</bcf:citekey>
+    <bcf:citekey order="22">gleeson_seed_2007</bcf:citekey>
+    <bcf:citekey order="23">watts_simple_2002</bcf:citekey>
+    <bcf:citekey order="24">gleeson_seed_2007</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty/global" type="entry" sortscheme="nty" sortnamekeyscheme="global">
   <bcf:sorting>

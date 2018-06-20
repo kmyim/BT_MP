@@ -1,15 +1,15 @@
 [0] Config.pm:340> INFO - This is Biber 2.4
-[0] Config.pm:343> INFO - Logfile is 'InfommReportEx.blg'
-[62] biber:287> INFO - === Mon Jun 18, 2018, 15:09:44
-[185] Biber.pm:348> INFO - Reading 'InfommReportEx.bcf'
-[394] Biber.pm:742> INFO - Found 10 citekeys in bib section 0
-[406] Biber.pm:3151> INFO - Processing section 0
-[449] Biber.pm:3308> INFO - Looking for bibtex format file 'BT_final_refs.bib' for section 0
-[538] bibtex.pm:1113> INFO - Decoding LaTeX character macros into UTF-8
-[625] bibtex.pm:974> INFO - Found BibTeX data source 'BT_final_refs.bib'
-[985] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[985] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[985] Biber.pm:3028> INFO - Sorting list 'nty/global' of type 'entry' with scheme 'nty' and locale 'en-US'
-[985] Biber.pm:3032> INFO - No sort tailoring available for locale 'en-US'
-[1007] bbl.pm:519> INFO - Writing 'InfommReportEx.bbl' with encoding 'UTF-8'
-[1120] bbl.pm:615> INFO - Output to InfommReportEx.bbl
+[1] Config.pm:343> INFO - Logfile is 'InfommReportEx.blg'
+[75] biber:287> INFO - === Wed Jun 20, 2018, 12:09:23
+[241] Biber.pm:348> INFO - Reading 'InfommReportEx.bcf'
+[420] Biber.pm:742> INFO - Found 11 citekeys in bib section 0
+[429] Biber.pm:3151> INFO - Processing section 0
+[474] Biber.pm:3308> INFO - Looking for bibtex format file 'BT_final_refs.bib' for section 0
+[572] bibtex.pm:1113> INFO - Decoding LaTeX character macros into UTF-8
+[649] bibtex.pm:974> INFO - Found BibTeX data source 'BT_final_refs.bib'
+[1017] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1017] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1018] Biber.pm:3028> INFO - Sorting list 'nty/global' of type 'entry' with scheme 'nty' and locale 'en-US'
+[1018] Biber.pm:3032> INFO - No sort tailoring available for locale 'en-US'
+[1042] bbl.pm:519> INFO - Writing 'InfommReportEx.bbl' with encoding 'UTF-8'
+[1211] bbl.pm:615> INFO - Output to InfommReportEx.bbl

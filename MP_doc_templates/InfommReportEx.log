@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.22)  18 JUN 2018 17:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.22)  20 JUN 2018 16:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1831,126 +1831,46 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 98.
+(amsmath)                 on input line 96.
 
-Package epstopdf Info: Source file: <figures/single_layer_gq.eps>
+Package epstopdf Info: Source file: <new_figs/single_layer_gq.eps>
 (epstopdf)                    date: 2018-06-17 06:43:10
 (epstopdf)                    size: 30432 bytes
-(epstopdf)             Output file: <figures/single_layer_gq-eps-converted-to.p
-df>
+(epstopdf)             Output file: <new_figs/single_layer_gq-eps-converted-to.
+pdf>
 (epstopdf)                    date: 2018-06-18 06:54:50
 (epstopdf)                    size: 12472 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/single_layer_gq-ep
-s-converted-to.pdf figures/single_layer_gq.eps>
-(epstopdf)             \includegraphics on input line 112.
+(epstopdf)             Command: <repstopdf --outfile=new_figs/single_layer_gq-e
+ps-converted-to.pdf new_figs/single_layer_gq.eps>
+(epstopdf)             \includegraphics on input line 113.
 Package epstopdf Info: Output file is already uptodate.
-<figures/single_layer_gq-eps-converted-to.pdf, id=42, 361.35pt x 230.8625pt>
-File: figures/single_layer_gq-eps-converted-to.pdf Graphic file (type pdf)
+<new_figs/single_layer_gq-eps-converted-to.pdf, id=42, 361.35pt x 230.8625pt>
+File: new_figs/single_layer_gq-eps-converted-to.pdf Graphic file (type pdf)
 
-<use figures/single_layer_gq-eps-converted-to.pdf>
-Package pdftex.def Info: figures/single_layer_gq-eps-converted-to.pdf used on i
-nput line 112.
-(pdftex.def)             Requested size: 260.17464pt x 166.22438pt.
+<use new_figs/single_layer_gq-eps-converted-to.pdf>
+Package pdftex.def Info: new_figs/single_layer_gq-eps-converted-to.pdf used on 
+input line 113.
+(pdftex.def)             Requested size: 277.51889pt x 177.30319pt.
+Package epstopdf Info: Source file: <new_figs/single_gq_critical.eps>
+(epstopdf)                    date: 2018-06-18 09:47:41
+(epstopdf)                    size: 33124 bytes
+(epstopdf)             Output file: <new_figs/single_gq_critical-eps-converted-
+to.pdf>
+(epstopdf)                    date: 2018-06-18 09:50:49
+(epstopdf)                    size: 12978 bytes
+(epstopdf)             Command: <repstopdf --outfile=new_figs/single_gq_critica
+l-eps-converted-to.pdf new_figs/single_gq_critical.eps>
+(epstopdf)             \includegraphics on input line 118.
+Package epstopdf Info: Output file is already uptodate.
+
+<new_figs/single_gq_critical-eps-converted-to.pdf, id=43, 361.35pt x 232.87pt>
+File: new_figs/single_gq_critical-eps-converted-to.pdf Graphic file (type pdf)
+
+<use new_figs/single_gq_critical-eps-converted-to.pdf>
+Package pdftex.def Info: new_figs/single_gq_critical-eps-converted-to.pdf used 
+on input line 118.
+(pdftex.def)             Requested size: 277.51889pt x 178.84496pt.
  [7]
-Package epstopdf Info: Source file: <figures/one_layer_qz_r035.eps>
-(epstopdf)                    date: 2018-06-15 15:09:39
-(epstopdf)                    size: 23019 bytes
-(epstopdf)             Output file: <figures/one_layer_qz_r035-eps-converted-to
-.pdf>
-(epstopdf)                    date: 2018-06-18 06:27:46
-(epstopdf)                    size: 9668 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/one_layer_qz_r035-
-eps-converted-to.pdf figures/one_layer_qz_r035.eps>
-(epstopdf)             \includegraphics on input line 123.
-Package epstopdf Info: Output file is already uptodate.
-
-<figures/one_layer_qz_r035-eps-converted-to.pdf, id=48, 358.33875pt x 212.795pt
->
-File: figures/one_layer_qz_r035-eps-converted-to.pdf Graphic file (type pdf)
- <use figures/one_layer_qz_r035-eps-converted-to.pdf>
-Package pdftex.def Info: figures/one_layer_qz_r035-eps-converted-to.pdf used on
- input line 123.
-(pdftex.def)             Requested size: 346.89731pt x 206.01476pt.
-Package epstopdf Info: Source file: <figures/one_layer_qz_r0371.eps>
-(epstopdf)                    date: 2018-06-15 15:06:04
-(epstopdf)                    size: 26191 bytes
-(epstopdf)             Output file: <figures/one_layer_qz_r0371-eps-converted-t
-o.pdf>
-(epstopdf)                    date: 2018-06-18 06:27:46
-(epstopdf)                    size: 10797 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/one_layer_qz_r0371
--eps-converted-to.pdf figures/one_layer_qz_r0371.eps>
-(epstopdf)             \includegraphics on input line 129.
-Package epstopdf Info: Output file is already uptodate.
-
-<figures/one_layer_qz_r0371-eps-converted-to.pdf, id=49, 358.33875pt x 212.795p
-t>
-File: figures/one_layer_qz_r0371-eps-converted-to.pdf Graphic file (type pdf)
- <use figures/one_layer_qz_r0371-eps-converted-to.pdf>
-Package pdftex.def Info: figures/one_layer_qz_r0371-eps-converted-to.pdf used o
-n input line 129.
-(pdftex.def)             Requested size: 346.89731pt x 206.01476pt.
-Package epstopdf Info: Source file: <figures/one_layer_qz_r0375.eps>
-(epstopdf)                    date: 2018-06-15 15:01:09
-(epstopdf)                    size: 27918 bytes
-(epstopdf)             Output file: <figures/one_layer_qz_r0375-eps-converted-t
-o.pdf>
-(epstopdf)                    date: 2018-06-18 06:27:47
-(epstopdf)                    size: 11449 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/one_layer_qz_r0375
--eps-converted-to.pdf figures/one_layer_qz_r0375.eps>
-(epstopdf)             \includegraphics on input line 135.
-Package epstopdf Info: Output file is already uptodate.
-
-<figures/one_layer_qz_r0375-eps-converted-to.pdf, id=50, 358.33875pt x 212.795p
-t>
-File: figures/one_layer_qz_r0375-eps-converted-to.pdf Graphic file (type pdf)
- <use figures/one_layer_qz_r0375-eps-converted-to.pdf>
-Package pdftex.def Info: figures/one_layer_qz_r0375-eps-converted-to.pdf used o
-n input line 135.
-(pdftex.def)             Requested size: 346.89731pt x 206.01476pt.
-Package epstopdf Info: Source file: <figures/one_layer_qr_z2.eps>
-(epstopdf)                    date: 2018-06-15 15:17:37
-(epstopdf)                    size: 23220 bytes
-(epstopdf)             Output file: <figures/one_layer_qr_z2-eps-converted-to.p
-df>
-(epstopdf)                    date: 2018-06-15 16:43:08
-(epstopdf)                    size: 9775 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/one_layer_qr_z2-ep
-s-converted-to.pdf figures/one_layer_qr_z2.eps>
-(epstopdf)             \includegraphics on input line 149.
-Package epstopdf Info: Output file is already uptodate.
-
-<figures/one_layer_qr_z2-eps-converted-to.pdf, id=51, 358.33875pt x 212.795pt>
-File: figures/one_layer_qr_z2-eps-converted-to.pdf Graphic file (type pdf)
-
-<use figures/one_layer_qr_z2-eps-converted-to.pdf>
-Package pdftex.def Info: figures/one_layer_qr_z2-eps-converted-to.pdf used on i
-nput line 149.
-(pdftex.def)             Requested size: 346.89731pt x 206.01476pt.
-Package epstopdf Info: Source file: <figures/one_layer_qr_z6.eps>
-(epstopdf)                    date: 2018-06-15 15:22:49
-(epstopdf)                    size: 26646 bytes
-(epstopdf)             Output file: <figures/one_layer_qr_z6-eps-converted-to.p
-df>
-(epstopdf)                    date: 2018-06-18 08:51:09
-(epstopdf)                    size: 10919 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/one_layer_qr_z6-ep
-s-converted-to.pdf figures/one_layer_qr_z6.eps>
-(epstopdf)             \includegraphics on input line 155.
-Package epstopdf Info: Output file is already uptodate.
-
-<figures/one_layer_qr_z6-eps-converted-to.pdf, id=52, 358.33875pt x 212.795pt>
-File: figures/one_layer_qr_z6-eps-converted-to.pdf Graphic file (type pdf)
-
-<use figures/one_layer_qr_z6-eps-converted-to.pdf>
-Package pdftex.def Info: figures/one_layer_qr_z6-eps-converted-to.pdf used on i
-nput line 155.
-(pdftex.def)             Requested size: 346.89731pt x 206.01476pt.
- [8 <./figures/single_layer_gq-eps-converted-to.pdf>] [9 <./figures/one_layer_q
-z_r035-eps-converted-to.pdf> <./figures/one_layer_qz_r0371-eps-converted-to.pdf
-> <./figures/one_layer_qz_r0375-eps-converted-to.pdf>] [10 <./figures/one_layer
-_qr_z2-eps-converted-to.pdf> <./figures/one_layer_qr_z6-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/single_layer_cascade.eps>
 (epstopdf)                    date: 2018-06-18 09:03:12
 (epstopdf)                    size: 20818 bytes
@@ -1960,266 +1880,491 @@ Package epstopdf Info: Source file: <figures/single_layer_cascade.eps>
 (epstopdf)                    size: 8620 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/single_layer_casca
 de-eps-converted-to.pdf figures/single_layer_cascade.eps>
-(epstopdf)             \includegraphics on input line 167.
+(epstopdf)             \includegraphics on input line 127.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/single_layer_cascade-eps-converted-to.pdf, id=128, 358.33875pt x 370.3
-8374pt>
+<figures/single_layer_cascade-eps-converted-to.pdf, id=49, 358.33875pt x 370.38
+374pt>
 File: figures/single_layer_cascade-eps-converted-to.pdf Graphic file (type pdf)
 
  <use figures/single_layer_cascade-eps-converted-to.pdf>
 Package pdftex.def Info: figures/single_layer_cascade-eps-converted-to.pdf used
- on input line 167.
+ on input line 127.
 (pdftex.def)             Requested size: 216.81pt x 224.10263pt.
- [11 <./figures/single_layer_cascade-eps-converted-to.pdf>] [12]
-Package epstopdf Info: Source file: <figures/node_swap_zr.eps>
-(epstopdf)                    date: 2018-06-16 12:26:12
-(epstopdf)                    size: 811573 bytes
-(epstopdf)             Output file: <figures/node_swap_zr-eps-converted-to.pdf>
-
-(epstopdf)                    date: 2018-06-18 17:00:20
-(epstopdf)                    size: 123437 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/node_swap_zr-eps-c
-onverted-to.pdf figures/node_swap_zr.eps>
-(epstopdf)             \includegraphics on input line 226.
+ [8 <./new_figs/single_layer_gq-eps-converted-to.pdf> <./new_figs/single_gq_cri
+tical-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/one_layer_qz_r035.eps>
+(epstopdf)                    date: 2018-06-15 15:09:39
+(epstopdf)                    size: 23019 bytes
+(epstopdf)             Output file: <figures/one_layer_qz_r035-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2018-06-18 06:27:46
+(epstopdf)                    size: 9668 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/one_layer_qz_r035-
+eps-converted-to.pdf figures/one_layer_qz_r035.eps>
+(epstopdf)             \includegraphics on input line 141.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/node_swap_zr-eps-converted-to.pdf, id=147, 298.11375pt x 269.005pt>
-File: figures/node_swap_zr-eps-converted-to.pdf Graphic file (type pdf)
-
-<use figures/node_swap_zr-eps-converted-to.pdf>
-Package pdftex.def Info: figures/node_swap_zr-eps-converted-to.pdf used on inpu
-t line 226.
-(pdftex.def)             Requested size: 260.17464pt x 234.7836pt.
-Package epstopdf Info: Source file: <figures/edge_swap_zr.eps>
-(epstopdf)                    date: 2018-06-16 12:25:51
-(epstopdf)                    size: 948158 bytes
-(epstopdf)             Output file: <figures/edge_swap_zr-eps-converted-to.pdf>
-
-(epstopdf)                    date: 2018-06-18 17:00:21
-(epstopdf)                    size: 128908 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/edge_swap_zr-eps-c
-onverted-to.pdf figures/edge_swap_zr.eps>
-(epstopdf)             \includegraphics on input line 232.
-Package epstopdf Info: Output file is already uptodate.
-
-<figures/edge_swap_zr-eps-converted-to.pdf, id=148, 326.21875pt x 269.005pt>
-File: figures/edge_swap_zr-eps-converted-to.pdf Graphic file (type pdf)
-
-<use figures/edge_swap_zr-eps-converted-to.pdf>
-Package pdftex.def Info: figures/edge_swap_zr-eps-converted-to.pdf used on inpu
-t line 232.
-(pdftex.def)             Requested size: 346.89731pt x 286.0798pt.
-Package epstopdf Info: Source file: <figures/hetero_ER_node_swap_with_single_ph
-ase.eps>
-(epstopdf)                    date: 2018-06-18 15:08:48
-(epstopdf)                    size: 1404053 bytes
-(epstopdf)             Output file: <figures/hetero_ER_node_swap_with_single_ph
-ase-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-06-18 17:00:24
-(epstopdf)                    size: 599587 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/hetero_ER_node_swa
-p_with_single_phase-eps-converted-to.pdf figures/hetero_ER_node_swap_with_singl
-e_phase.eps>
-(epstopdf)             \includegraphics on input line 243.
-Package epstopdf Info: Output file is already uptodate.
-
-<figures/hetero_ER_node_swap_with_single_phase-eps-converted-to.pdf, id=149, 29
-6.10625pt x 266.9975pt>
-File: figures/hetero_ER_node_swap_with_single_phase-eps-converted-to.pdf Graphi
-c file (type pdf)
-
-<use figures/hetero_ER_node_swap_with_single_phase-eps-converted-to.pdf>
-Package pdftex.def Info: figures/hetero_ER_node_swap_with_single_phase-eps-conv
-erted-to.pdf used on input line 243.
-(pdftex.def)             Requested size: 260.17464pt x 234.60406pt.
-Package epstopdf Info: Source file: <figures/hetero_edge_swap_ER.eps>
-(epstopdf)                    date: 2018-06-16 18:12:12
-(epstopdf)                    size: 670845 bytes
-(epstopdf)             Output file: <figures/hetero_edge_swap_ER-eps-converted-
-to.pdf>
-(epstopdf)                    date: 2018-06-18 17:00:25
-(epstopdf)                    size: 20877 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/hetero_edge_swap_E
-R-eps-converted-to.pdf figures/hetero_edge_swap_ER.eps>
-(epstopdf)             \includegraphics on input line 249.
-Package epstopdf Info: Output file is already uptodate.
-
-<figures/hetero_edge_swap_ER-eps-converted-to.pdf, id=150, 433.62pt x 289.08pt>
-File: figures/hetero_edge_swap_ER-eps-converted-to.pdf Graphic file (type pdf)
-<use figures/hetero_edge_swap_ER-eps-converted-to.pdf>
-Package pdftex.def Info: figures/hetero_edge_swap_ER-eps-converted-to.pdf used 
-on input line 249.
-(pdftex.def)             Requested size: 346.89731pt x 231.27754pt.
-Package epstopdf Info: Source file: <figures/pp_single_transition_overlay.eps>
-(epstopdf)                    date: 2018-06-18 15:28:01
-(epstopdf)                    size: 1212943 bytes
-(epstopdf)             Output file: <figures/pp_single_transition_overlay-eps-c
-onverted-to.pdf>
-(epstopdf)                    date: 2018-06-18 17:11:24
-(epstopdf)                    size: 513455 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/pp_single_transiti
-on_overlay-eps-converted-to.pdf figures/pp_single_transition_overlay.eps>
-(epstopdf)             \includegraphics on input line 257.
-Package epstopdf Info: Output file is already uptodate.
-
-<figures/pp_single_transition_overlay-eps-converted-to.pdf, id=151, 296.10625pt
- x 266.9975pt>
-File: figures/pp_single_transition_overlay-eps-converted-to.pdf Graphic file (t
-ype pdf)
- <use figures/pp_single_transition_overlay-eps-converted-to.pdf>
-Package pdftex.def Info: figures/pp_single_transition_overlay-eps-converted-to.
-pdf used on input line 257.
-(pdftex.def)             Requested size: 433.62pt x 391.00677pt.
-
-[13] [14 <./figures/node_swap_zr-eps-converted-to.pdf> <./figures/edge_swap_zr-
-eps-converted-to.pdf>] [15 <./figures/hetero_ER_node_swap_with_single_phase-eps
--converted-to.pdf> <./figures/hetero_edge_swap_ER-eps-converted-to.pdf>]
-[16 <./figures/pp_single_transition_overlay-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <figures/pp_double_node_swap_100x100.eps>
-(epstopdf)                    date: 2018-06-16 14:37:35
-(epstopdf)                    size: 2936435 bytes
-(epstopdf)             Output file: <figures/pp_double_node_swap_100x100-eps-co
-nverted-to.pdf>
-(epstopdf)                    date: 2018-06-18 17:14:38
-(epstopdf)                    size: 21042 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/pp_double_node_swa
-p_100x100-eps-converted-to.pdf figures/pp_double_node_swap_100x100.eps>
-(epstopdf)             \includegraphics on input line 267.
-Package epstopdf Info: Output file is already uptodate.
-
-<figures/pp_double_node_swap_100x100-eps-converted-to.pdf, id=4215, 433.62pt x 
-289.08pt>
-File: figures/pp_double_node_swap_100x100-eps-converted-to.pdf Graphic file (ty
-pe pdf)
- <use figures/pp_double_node_swap_100x100-eps-converted-to.pdf>
-Package pdftex.def Info: figures/pp_double_node_swap_100x100-eps-converted-to.p
-df used on input line 267.
-(pdftex.def)             Requested size: 260.17464pt x 173.45815pt.
-Package epstopdf Info: Source file: <figures/pp_double_edge_swap_100x100.eps>
-(epstopdf)                    date: 2018-06-16 15:59:57
-(epstopdf)                    size: 2937202 bytes
-(epstopdf)             Output file: <figures/pp_double_edge_swap_100x100-eps-co
-nverted-to.pdf>
-(epstopdf)                    date: 2018-06-18 17:11:26
-(epstopdf)                    size: 21630 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/pp_double_edge_swa
-p_100x100-eps-converted-to.pdf figures/pp_double_edge_swap_100x100.eps>
-(epstopdf)             \includegraphics on input line 273.
-Package epstopdf Info: Output file is already uptodate.
-
-<figures/pp_double_edge_swap_100x100-eps-converted-to.pdf, id=4216, 433.62pt x 
-289.08pt>
-File: figures/pp_double_edge_swap_100x100-eps-converted-to.pdf Graphic file (ty
-pe pdf)
- <use figures/pp_double_edge_swap_100x100-eps-converted-to.pdf>
-Package pdftex.def Info: figures/pp_double_edge_swap_100x100-eps-converted-to.p
-df used on input line 273.
-(pdftex.def)             Requested size: 346.89731pt x 231.27754pt.
-
-[17] [18 <./figures/pp_double_node_swap_100x100-eps-converted-to.pdf> <./figure
-s/pp_double_edge_swap_100x100-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <figures/hetero_node_swap_pp.eps>
-(epstopdf)                    date: 2018-06-16 18:54:04
-(epstopdf)                    size: 64137361 bytes
-(epstopdf)             Output file: <figures/hetero_node_swap_pp-eps-converted-
-to.pdf>
-(epstopdf)                    date: 2018-06-18 17:11:57
-(epstopdf)                    size: 45262 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/hetero_node_swap_p
-p-eps-converted-to.pdf figures/hetero_node_swap_pp.eps>
-(epstopdf)             \includegraphics on input line 288.
-Package epstopdf Info: Output file is already uptodate.
-
-<figures/hetero_node_swap_pp-eps-converted-to.pdf, id=4296, 433.62pt x 289.08pt
+<figures/one_layer_qz_r035-eps-converted-to.pdf, id=75, 358.33875pt x 212.795pt
 >
-File: figures/hetero_node_swap_pp-eps-converted-to.pdf Graphic file (type pdf)
- <use figures/hetero_node_swap_pp-eps-converted-to.pdf>
-Package pdftex.def Info: figures/hetero_node_swap_pp-eps-converted-to.pdf used 
-on input line 288.
-(pdftex.def)             Requested size: 260.17464pt x 173.45815pt.
-Package epstopdf Info: Source file: <figures/hetero_edge_swap_pp.eps>
-(epstopdf)                    date: 2018-06-16 19:38:10
-(epstopdf)                    size: 64138128 bytes
-(epstopdf)             Output file: <figures/hetero_edge_swap_pp-eps-converted-
-to.pdf>
-(epstopdf)                    date: 2018-06-18 17:12:29
-(epstopdf)                    size: 39073 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/hetero_edge_swap_p
-p-eps-converted-to.pdf figures/hetero_edge_swap_pp.eps>
-(epstopdf)             \includegraphics on input line 294.
+File: figures/one_layer_qz_r035-eps-converted-to.pdf Graphic file (type pdf)
+ <use figures/one_layer_qz_r035-eps-converted-to.pdf>
+Package pdftex.def Info: figures/one_layer_qz_r035-eps-converted-to.pdf used on
+ input line 141.
+(pdftex.def)             Requested size: 173.44534pt x 103.00087pt.
+Package epstopdf Info: Source file: <figures/one_layer_qz_r0371.eps>
+(epstopdf)                    date: 2018-06-15 15:06:04
+(epstopdf)                    size: 26191 bytes
+(epstopdf)             Output file: <figures/one_layer_qz_r0371-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2018-06-18 06:27:46
+(epstopdf)                    size: 10797 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/one_layer_qz_r0371
+-eps-converted-to.pdf figures/one_layer_qz_r0371.eps>
+(epstopdf)             \includegraphics on input line 146.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/hetero_edge_swap_pp-eps-converted-to.pdf, id=4297, 433.62pt x 289.08pt
+<figures/one_layer_qz_r0371-eps-converted-to.pdf, id=76, 358.33875pt x 212.795p
+t>
+File: figures/one_layer_qz_r0371-eps-converted-to.pdf Graphic file (type pdf)
+ <use figures/one_layer_qz_r0371-eps-converted-to.pdf>
+Package pdftex.def Info: figures/one_layer_qz_r0371-eps-converted-to.pdf used o
+n input line 146.
+(pdftex.def)             Requested size: 173.44534pt x 103.00087pt.
+Package epstopdf Info: Source file: <figures/one_layer_qz_r0375.eps>
+(epstopdf)                    date: 2018-06-15 15:01:09
+(epstopdf)                    size: 27918 bytes
+(epstopdf)             Output file: <figures/one_layer_qz_r0375-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2018-06-18 06:27:47
+(epstopdf)                    size: 11449 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/one_layer_qz_r0375
+-eps-converted-to.pdf figures/one_layer_qz_r0375.eps>
+(epstopdf)             \includegraphics on input line 151.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/one_layer_qz_r0375-eps-converted-to.pdf, id=77, 358.33875pt x 212.795p
+t>
+File: figures/one_layer_qz_r0375-eps-converted-to.pdf Graphic file (type pdf)
+ <use figures/one_layer_qz_r0375-eps-converted-to.pdf>
+Package pdftex.def Info: figures/one_layer_qz_r0375-eps-converted-to.pdf used o
+n input line 151.
+(pdftex.def)             Requested size: 173.44534pt x 103.00087pt.
+ [9 <./figures/single_layer_cascade-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/one_layer_qr_z2.eps>
+(epstopdf)                    date: 2018-06-15 15:17:37
+(epstopdf)                    size: 23220 bytes
+(epstopdf)             Output file: <figures/one_layer_qr_z2-eps-converted-to.p
+df>
+(epstopdf)                    date: 2018-06-15 16:43:08
+(epstopdf)                    size: 9775 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/one_layer_qr_z2-ep
+s-converted-to.pdf figures/one_layer_qr_z2.eps>
+(epstopdf)             \includegraphics on input line 162.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/one_layer_qr_z2-eps-converted-to.pdf, id=89, 358.33875pt x 212.795pt>
+File: figures/one_layer_qr_z2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/one_layer_qr_z2-eps-converted-to.pdf>
+Package pdftex.def Info: figures/one_layer_qr_z2-eps-converted-to.pdf used on i
+nput line 162.
+(pdftex.def)             Requested size: 173.44534pt x 103.00087pt.
+Package epstopdf Info: Source file: <figures/one_layer_qr_z6.eps>
+(epstopdf)                    date: 2018-06-15 15:22:49
+(epstopdf)                    size: 26646 bytes
+(epstopdf)             Output file: <figures/one_layer_qr_z6-eps-converted-to.p
+df>
+(epstopdf)                    date: 2018-06-18 08:51:09
+(epstopdf)                    size: 10919 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/one_layer_qr_z6-ep
+s-converted-to.pdf figures/one_layer_qr_z6.eps>
+(epstopdf)             \includegraphics on input line 167.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/one_layer_qr_z6-eps-converted-to.pdf, id=90, 358.33875pt x 212.795pt>
+File: figures/one_layer_qr_z6-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/one_layer_qr_z6-eps-converted-to.pdf>
+Package pdftex.def Info: figures/one_layer_qr_z6-eps-converted-to.pdf used on i
+nput line 167.
+(pdftex.def)             Requested size: 173.44534pt x 103.00087pt.
+ [10 <./figures/one_layer_qz_r035-eps-converted-to.pdf> <./figures/one_layer_qz
+_r0371-eps-converted-to.pdf> <./figures/one_layer_qz_r0375-eps-converted-to.pdf
+> <./figures/one_layer_qr_z2-eps-converted-to.pdf> <./figures/one_layer_qr_z6-e
+ps-converted-to.pdf>]
+[11]
+Package epstopdf Info: Source file: <new_figs/two_layer_node_qz_r015.eps>
+(epstopdf)                    date: 2018-06-15 15:48:36
+(epstopdf)                    size: 24784 bytes
+(epstopdf)             Output file: <new_figs/two_layer_node_qz_r015-eps-conver
+ted-to.pdf>
+(epstopdf)                    date: 2018-06-20 08:20:17
+(epstopdf)                    size: 10270 bytes
+(epstopdf)             Command: <repstopdf --outfile=new_figs/two_layer_node_qz
+_r015-eps-converted-to.pdf new_figs/two_layer_node_qz_r015.eps>
+(epstopdf)             \includegraphics on input line 235.
+Package epstopdf Info: Output file is already uptodate.
+
+<new_figs/two_layer_node_qz_r015-eps-converted-to.pdf, id=154, 358.33875pt x 21
+2.795pt>
+File: new_figs/two_layer_node_qz_r015-eps-converted-to.pdf Graphic file (type p
+df)
+ <use new_figs/two_layer_node_qz_r015-eps-converted-to.pdf>
+Package pdftex.def Info: new_figs/two_layer_node_qz_r015-eps-converted-to.pdf u
+sed on input line 235.
+(pdftex.def)             Requested size: 173.44534pt x 103.00087pt.
+Package epstopdf Info: Source file: <new_figs/two_layer_node_qz_r019.eps>
+(epstopdf)                    date: 2018-06-15 16:05:27
+(epstopdf)                    size: 26346 bytes
+(epstopdf)             Output file: <new_figs/two_layer_node_qz_r019-eps-conver
+ted-to.pdf>
+(epstopdf)                    date: 2018-06-20 08:20:17
+(epstopdf)                    size: 10872 bytes
+(epstopdf)             Command: <repstopdf --outfile=new_figs/two_layer_node_qz
+_r019-eps-converted-to.pdf new_figs/two_layer_node_qz_r019.eps>
+(epstopdf)             \includegraphics on input line 240.
+Package epstopdf Info: Output file is already uptodate.
+
+<new_figs/two_layer_node_qz_r019-eps-converted-to.pdf, id=155, 358.33875pt x 21
+2.795pt>
+File: new_figs/two_layer_node_qz_r019-eps-converted-to.pdf Graphic file (type p
+df)
+ <use new_figs/two_layer_node_qz_r019-eps-converted-to.pdf>
+Package pdftex.def Info: new_figs/two_layer_node_qz_r019-eps-converted-to.pdf u
+sed on input line 240.
+(pdftex.def)             Requested size: 173.44534pt x 103.00087pt.
+Package epstopdf Info: Source file: <new_figs/two_layer_node_qz_r02.eps>
+(epstopdf)                    date: 2018-06-15 16:08:40
+(epstopdf)                    size: 30195 bytes
+(epstopdf)             Output file: <new_figs/two_layer_node_qz_r02-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2018-06-20 08:20:18
+(epstopdf)                    size: 12161 bytes
+(epstopdf)             Command: <repstopdf --outfile=new_figs/two_layer_node_qz
+_r02-eps-converted-to.pdf new_figs/two_layer_node_qz_r02.eps>
+(epstopdf)             \includegraphics on input line 245.
+Package epstopdf Info: Output file is already uptodate.
+
+<new_figs/two_layer_node_qz_r02-eps-converted-to.pdf, id=156, 358.33875pt x 212
+.795pt>
+File: new_figs/two_layer_node_qz_r02-eps-converted-to.pdf Graphic file (type pd
+f)
+ <use new_figs/two_layer_node_qz_r02-eps-converted-to.pdf>
+Package pdftex.def Info: new_figs/two_layer_node_qz_r02-eps-converted-to.pdf us
+ed on input line 245.
+(pdftex.def)             Requested size: 173.44534pt x 103.00087pt.
+Package epstopdf Info: Source file: <new_figs/two_layer_edge_qz_r015.eps>
+(epstopdf)                    date: 2018-06-15 16:24:35
+(epstopdf)                    size: 24108 bytes
+(epstopdf)             Output file: <new_figs/two_layer_edge_qz_r015-eps-conver
+ted-to.pdf>
+(epstopdf)                    date: 2018-06-20 08:29:46
+(epstopdf)                    size: 10118 bytes
+(epstopdf)             Command: <repstopdf --outfile=new_figs/two_layer_edge_qz
+_r015-eps-converted-to.pdf new_figs/two_layer_edge_qz_r015.eps>
+(epstopdf)             \includegraphics on input line 254.
+Package epstopdf Info: Output file is already uptodate.
+
+<new_figs/two_layer_edge_qz_r015-eps-converted-to.pdf, id=157, 358.33875pt x 21
+2.795pt>
+File: new_figs/two_layer_edge_qz_r015-eps-converted-to.pdf Graphic file (type p
+df)
+ <use new_figs/two_layer_edge_qz_r015-eps-converted-to.pdf>
+Package pdftex.def Info: new_figs/two_layer_edge_qz_r015-eps-converted-to.pdf u
+sed on input line 254.
+(pdftex.def)             Requested size: 173.44534pt x 103.00087pt.
+Package epstopdf Info: Source file: <new_figs/two_layer_edge_qz_r019.eps>
+(epstopdf)                    date: 2018-06-15 16:22:11
+(epstopdf)                    size: 25990 bytes
+(epstopdf)             Output file: <new_figs/two_layer_edge_qz_r019-eps-conver
+ted-to.pdf>
+(epstopdf)                    date: 2018-06-20 08:29:46
+(epstopdf)                    size: 10712 bytes
+(epstopdf)             Command: <repstopdf --outfile=new_figs/two_layer_edge_qz
+_r019-eps-converted-to.pdf new_figs/two_layer_edge_qz_r019.eps>
+(epstopdf)             \includegraphics on input line 259.
+Package epstopdf Info: Output file is already uptodate.
+
+<new_figs/two_layer_edge_qz_r019-eps-converted-to.pdf, id=158, 358.33875pt x 21
+2.795pt>
+File: new_figs/two_layer_edge_qz_r019-eps-converted-to.pdf Graphic file (type p
+df)
+ <use new_figs/two_layer_edge_qz_r019-eps-converted-to.pdf>
+Package pdftex.def Info: new_figs/two_layer_edge_qz_r019-eps-converted-to.pdf u
+sed on input line 259.
+(pdftex.def)             Requested size: 173.44534pt x 103.00087pt.
+Package epstopdf Info: Source file: <new_figs/two_layer_edge_qz_r02.eps>
+(epstopdf)                    date: 2018-06-15 16:17:30
+(epstopdf)                    size: 31033 bytes
+(epstopdf)             Output file: <new_figs/two_layer_edge_qz_r02-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2018-06-20 08:29:46
+(epstopdf)                    size: 12308 bytes
+(epstopdf)             Command: <repstopdf --outfile=new_figs/two_layer_edge_qz
+_r02-eps-converted-to.pdf new_figs/two_layer_edge_qz_r02.eps>
+(epstopdf)             \includegraphics on input line 264.
+Package epstopdf Info: Output file is already uptodate.
+
+<new_figs/two_layer_edge_qz_r02-eps-converted-to.pdf, id=159, 358.33875pt x 212
+.795pt>
+File: new_figs/two_layer_edge_qz_r02-eps-converted-to.pdf Graphic file (type pd
+f)
+ <use new_figs/two_layer_edge_qz_r02-eps-converted-to.pdf>
+Package pdftex.def Info: new_figs/two_layer_edge_qz_r02-eps-converted-to.pdf us
+ed on input line 264.
+(pdftex.def)             Requested size: 173.44534pt x 103.00087pt.
+Package epstopdf Info: Source file: <new_figs/fullphase.eps>
+(epstopdf)                    date: 2018-06-20 10:13:29
+(epstopdf)                    size: 18949 bytes
+(epstopdf)             Output file: <new_figs/fullphase-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-06-20 10:18:37
+(epstopdf)                    size: 8085 bytes
+(epstopdf)             Command: <repstopdf --outfile=new_figs/fullphase-eps-con
+verted-to.pdf new_figs/fullphase.eps>
+(epstopdf)             \includegraphics on input line 272.
+Package epstopdf Info: Output file is already uptodate.
+
+<new_figs/fullphase-eps-converted-to.pdf, id=160, 358.33875pt x 360.34625pt>
+File: new_figs/fullphase-eps-converted-to.pdf Graphic file (type pdf)
+
+<use new_figs/fullphase-eps-converted-to.pdf>
+Package pdftex.def Info: new_figs/fullphase-eps-converted-to.pdf used on input 
+line 272.
+(pdftex.def)             Requested size: 216.81pt x 218.02939pt.
+ [12] [13 <./new_figs/two_layer_node_qz_r015-eps-converted-to.pdf> <./new_figs/
+two_layer_node_qz_r019-eps-converted-to.pdf> <./new_figs/two_layer_node_qz_r02-
+eps-converted-to.pdf> <./new_figs/two_layer_edge_qz_r015-eps-converted-to.pdf> 
+<./new_figs/two_layer_edge_qz_r019-eps-converted-to.pdf> <./new_figs/two_layer_
+edge_qz_r02-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <new_figs/er_node.eps>
+(epstopdf)                    date: 2018-06-19 15:07:48
+(epstopdf)                    size: 980607 bytes
+(epstopdf)             Output file: <new_figs/er_node-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-06-20 10:18:40
+(epstopdf)                    size: 413751 bytes
+(epstopdf)             Command: <repstopdf --outfile=new_figs/er_node-eps-conve
+rted-to.pdf new_figs/er_node.eps>
+(epstopdf)             \includegraphics on input line 285.
+Package epstopdf Info: Output file is already uptodate.
+<new_figs/er_node-eps-converted-to.pdf, id=236, 296.10625pt x 262.9825pt>
+File: new_figs/er_node-eps-converted-to.pdf Graphic file (type pdf)
+
+<use new_figs/er_node-eps-converted-to.pdf>
+Package pdftex.def Info: new_figs/er_node-eps-converted-to.pdf used on input li
+ne 285.
+(pdftex.def)             Requested size: 195.12767pt x 173.30412pt.
+Package epstopdf Info: Source file: <new_figs/er_edge.eps>
+(epstopdf)                    date: 2018-06-19 14:55:14
+(epstopdf)                    size: 980861 bytes
+(epstopdf)             Output file: <new_figs/er_edge-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-06-20 10:18:57
+(epstopdf)                    size: 413232 bytes
+(epstopdf)             Command: <repstopdf --outfile=new_figs/er_edge-eps-conve
+rted-to.pdf new_figs/er_edge.eps>
+(epstopdf)             \includegraphics on input line 290.
+Package epstopdf Info: Output file is already uptodate.
+
+<new_figs/er_edge-eps-converted-to.pdf, id=237, 296.10625pt x 258.9675pt>
+File: new_figs/er_edge-eps-converted-to.pdf Graphic file (type pdf)
+
+<use new_figs/er_edge-eps-converted-to.pdf>
+Package pdftex.def Info: new_figs/er_edge-eps-converted-to.pdf used on input li
+ne 290.
+(pdftex.def)             Requested size: 195.12767pt x 170.65826pt.
+ [14 <./new_figs/fullphase-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <new_figs/er_hetero_node.eps>
+(epstopdf)                    date: 2018-06-19 15:39:23
+(epstopdf)                    size: 1272544 bytes
+(epstopdf)             Output file: <new_figs/er_hetero_node-eps-converted-to.p
+df>
+(epstopdf)                    date: 2018-06-20 10:38:54
+(epstopdf)                    size: 537858 bytes
+(epstopdf)             Command: <repstopdf --outfile=new_figs/er_hetero_node-ep
+s-converted-to.pdf new_figs/er_hetero_node.eps>
+(epstopdf)             \includegraphics on input line 303.
+Package epstopdf Info: Output file is already uptodate.
+
+<new_figs/er_hetero_node-eps-converted-to.pdf, id=249, 296.10625pt x 258.9675pt
 >
-File: figures/hetero_edge_swap_pp-eps-converted-to.pdf Graphic file (type pdf)
- <use figures/hetero_edge_swap_pp-eps-converted-to.pdf>
-Package pdftex.def Info: figures/hetero_edge_swap_pp-eps-converted-to.pdf used 
-on input line 294.
-(pdftex.def)             Requested size: 260.17464pt x 173.45815pt.
-Package epstopdf Info: Source file: <figures/hetero_edge_reverse_swap_pp.eps>
-(epstopdf)                    date: 2018-06-16 20:21:58
-(epstopdf)                    size: 64138337 bytes
-(epstopdf)             Output file: <figures/hetero_edge_reverse_swap_pp-eps-co
-nverted-to.pdf>
-(epstopdf)                    date: 2018-06-18 17:13:01
-(epstopdf)                    size: 39755 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/hetero_edge_revers
-e_swap_pp-eps-converted-to.pdf figures/hetero_edge_reverse_swap_pp.eps>
-(epstopdf)             \includegraphics on input line 300.
+File: new_figs/er_hetero_node-eps-converted-to.pdf Graphic file (type pdf)
+ <use new_figs/er_hetero_node-eps-converted-to.pdf>
+Package pdftex.def Info: new_figs/er_hetero_node-eps-converted-to.pdf used on i
+nput line 303.
+(pdftex.def)             Requested size: 195.12767pt x 170.65826pt.
+Package epstopdf Info: Source file: <new_figs/er_hetero_edge.eps>
+(epstopdf)                    date: 2018-06-19 15:43:17
+(epstopdf)                    size: 1211755 bytes
+(epstopdf)             Output file: <new_figs/er_hetero_edge-eps-converted-to.p
+df>
+(epstopdf)                    date: 2018-06-20 10:38:57
+(epstopdf)                    size: 512045 bytes
+(epstopdf)             Command: <repstopdf --outfile=new_figs/er_hetero_edge-ep
+s-converted-to.pdf new_figs/er_hetero_edge.eps>
+(epstopdf)             \includegraphics on input line 308.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/hetero_edge_reverse_swap_pp-eps-converted-to.pdf, id=4298, 433.62pt x 
-289.08pt>
-File: figures/hetero_edge_reverse_swap_pp-eps-converted-to.pdf Graphic file (ty
-pe pdf)
- <use figures/hetero_edge_reverse_swap_pp-eps-converted-to.pdf>
-Package pdftex.def Info: figures/hetero_edge_reverse_swap_pp-eps-converted-to.p
-df used on input line 300.
-(pdftex.def)             Requested size: 260.17464pt x 173.45815pt.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 313.
+<new_figs/er_hetero_edge-eps-converted-to.pdf, id=250, 296.10625pt x 258.9675pt
+>
+File: new_figs/er_hetero_edge-eps-converted-to.pdf Graphic file (type pdf)
+ <use new_figs/er_hetero_edge-eps-converted-to.pdf>
+Package pdftex.def Info: new_figs/er_hetero_edge-eps-converted-to.pdf used on i
+nput line 308.
+(pdftex.def)             Requested size: 195.12767pt x 170.65826pt.
+Package epstopdf Info: Source file: <new_figs/pp_single.eps>
+(epstopdf)                    date: 2018-06-19 16:44:53
+(epstopdf)                    size: 1209814 bytes
+(epstopdf)             Output file: <new_figs/pp_single-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-06-20 10:42:15
+(epstopdf)                    size: 511668 bytes
+(epstopdf)             Command: <repstopdf --outfile=new_figs/pp_single-eps-con
+verted-to.pdf new_figs/pp_single.eps>
+(epstopdf)             \includegraphics on input line 316.
+Package epstopdf Info: Output file is already uptodate.
 
+<new_figs/pp_single-eps-converted-to.pdf, id=251, 296.10625pt x 258.9675pt>
+File: new_figs/pp_single-eps-converted-to.pdf Graphic file (type pdf)
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 313.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 319.
+<use new_figs/pp_single-eps-converted-to.pdf>
+Package pdftex.def Info: new_figs/pp_single-eps-converted-to.pdf used on input 
+line 316.
+(pdftex.def)             Requested size: 260.17464pt x 227.5483pt.
+ [15 <./new_figs/er_node-eps-converted-to.pdf> <./new_figs/er_edge-eps-converte
+d-to.pdf>]
+Package epstopdf Info: Source file: <new_figs/pp_node.eps>
+(epstopdf)                    date: 2018-06-19 15:03:53
+(epstopdf)                    size: 993617 bytes
+(epstopdf)             Output file: <new_figs/pp_node-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-06-20 10:55:32
+(epstopdf)                    size: 410823 bytes
+(epstopdf)             Command: <repstopdf --outfile=new_figs/pp_node-eps-conve
+rted-to.pdf new_figs/pp_node.eps>
+(epstopdf)             \includegraphics on input line 326.
+Package epstopdf Info: Output file is already uptodate.
 
+<new_figs/pp_node-eps-converted-to.pdf, id=3339, 300.12125pt x 258.9675pt>
+File: new_figs/pp_node-eps-converted-to.pdf Graphic file (type pdf)
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+<use new_figs/pp_node-eps-converted-to.pdf>
+Package pdftex.def Info: new_figs/pp_node-eps-converted-to.pdf used on input li
+ne 326.
+(pdftex.def)             Requested size: 195.12767pt x 168.37428pt.
+Package epstopdf Info: Source file: <new_figs/pp_edge.eps>
+(epstopdf)                    date: 2018-06-19 14:46:28
+(epstopdf)                    size: 982879 bytes
+(epstopdf)             Output file: <new_figs/pp_edge-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-06-20 10:55:35
+(epstopdf)                    size: 413800 bytes
+(epstopdf)             Command: <repstopdf --outfile=new_figs/pp_edge-eps-conve
+rted-to.pdf new_figs/pp_edge.eps>
+(epstopdf)             \includegraphics on input line 331.
+Package epstopdf Info: Output file is already uptodate.
+
+<new_figs/pp_edge-eps-converted-to.pdf, id=3340, 296.10625pt x 258.9675pt>
+File: new_figs/pp_edge-eps-converted-to.pdf Graphic file (type pdf)
+
+<use new_figs/pp_edge-eps-converted-to.pdf>
+Package pdftex.def Info: new_figs/pp_edge-eps-converted-to.pdf used on input li
+ne 331.
+(pdftex.def)             Requested size: 195.12767pt x 170.65826pt.
+ [16 <./new_figs/er_hetero_node-eps-converted-to.pdf> <./new_figs/er_hetero_edg
+e-eps-converted-to.pdf>] [17 <./new_figs/pp_single-eps-converted-to.pdf> <./new
+_figs/pp_node-eps-converted-to.pdf> <./new_figs/pp_edge-eps-converted-to.pdf>] 
+[18]
+Package epstopdf Info: Source file: <new_figs/pp_hetero_node.eps>
+(epstopdf)                    date: 2018-06-19 15:29:48
+(epstopdf)                    size: 1231439 bytes
+(epstopdf)             Output file: <new_figs/pp_hetero_node-eps-converted-to.p
+df>
+(epstopdf)                    date: 2018-06-20 11:04:47
+(epstopdf)                    size: 510854 bytes
+(epstopdf)             Command: <repstopdf --outfile=new_figs/pp_hetero_node-ep
+s-converted-to.pdf new_figs/pp_hetero_node.eps>
+(epstopdf)             \includegraphics on input line 348.
+Package epstopdf Info: Output file is already uptodate.
+
+<new_figs/pp_hetero_node-eps-converted-to.pdf, id=12300, 300.12125pt x 258.9675
+pt>
+File: new_figs/pp_hetero_node-eps-converted-to.pdf Graphic file (type pdf)
+ <use new_figs/pp_hetero_node-eps-converted-to.pdf>
+Package pdftex.def Info: new_figs/pp_hetero_node-eps-converted-to.pdf used on i
+nput line 348.
+(pdftex.def)             Requested size: 195.12767pt x 168.37428pt.
+Package epstopdf Info: Source file: <new_figs/pp_hetero_edge.eps>
+(epstopdf)                    date: 2018-06-19 14:50:58
+(epstopdf)                    size: 1212255 bytes
+(epstopdf)             Output file: <new_figs/pp_hetero_edge-eps-converted-to.p
+df>
+(epstopdf)                    date: 2018-06-20 11:04:50
+(epstopdf)                    size: 512045 bytes
+(epstopdf)             Command: <repstopdf --outfile=new_figs/pp_hetero_edge-ep
+s-converted-to.pdf new_figs/pp_hetero_edge.eps>
+(epstopdf)             \includegraphics on input line 354.
+Package epstopdf Info: Output file is already uptodate.
+
+<new_figs/pp_hetero_edge-eps-converted-to.pdf, id=12301, 296.10625pt x 258.9675
+pt>
+File: new_figs/pp_hetero_edge-eps-converted-to.pdf Graphic file (type pdf)
+ <use new_figs/pp_hetero_edge-eps-converted-to.pdf>
+Package pdftex.def Info: new_figs/pp_hetero_edge-eps-converted-to.pdf used on i
+nput line 354.
+(pdftex.def)             Requested size: 195.12767pt x 170.65826pt.
+Package epstopdf Info: Source file: <new_figs/pp_hetero_reverse_edge.eps>
+(epstopdf)                    date: 2018-06-19 14:52:12
+(epstopdf)                    size: 1212255 bytes
+(epstopdf)             Output file: <new_figs/pp_hetero_reverse_edge-eps-conver
+ted-to.pdf>
+(epstopdf)                    date: 2018-06-20 11:05:35
+(epstopdf)                    size: 512045 bytes
+(epstopdf)             Command: <repstopdf --outfile=new_figs/pp_hetero_reverse
+_edge-eps-converted-to.pdf new_figs/pp_hetero_reverse_edge.eps>
+(epstopdf)             \includegraphics on input line 359.
+Package epstopdf Info: Output file is already uptodate.
+
+<new_figs/pp_hetero_reverse_edge-eps-converted-to.pdf, id=12302, 296.10625pt x 
+258.9675pt>
+File: new_figs/pp_hetero_reverse_edge-eps-converted-to.pdf Graphic file (type p
+df)
+ <use new_figs/pp_hetero_reverse_edge-eps-converted-to.pdf>
+Package pdftex.def Info: new_figs/pp_hetero_reverse_edge-eps-converted-to.pdf u
+sed on input line 359.
+(pdftex.def)             Requested size: 195.12767pt x 170.65826pt.
+ [19 <./new_figs/pp_hetero_node-eps-converted-to.pdf> <./new_figs/pp_hetero_edg
+e-eps-converted-to.pdf> <./new_figs/pp_hetero_reverse_edge-eps-converted-to.pdf
+>]
+[20]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 386.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) [19] [20 <./figures/hetero_node_swap_pp-eps-converted-to.pdf> <./figures/hete
-ro_edge_swap_pp-eps-converted-to.pdf> <./figures/hetero_edge_reverse_swap_pp-ep
-s-converted-to.pdf>]
-Overfull \hbox (12.63803pt too wide) in paragraph at lines 320--320
+)
+Overfull \hbox (12.63803pt too wide) in paragraph at lines 387--387
 \T1/cmr/m/n/12 re-sponse het-ero-gene-ity in mul-ti-plex net-works''. In: \T1/c
 mr/m/it/12 Phys-i-cal Re-view E \T1/cmr/m/n/12 90.6 (Dec. 29,
  []
 
-
-Overfull \hbox (7.38127pt too wide) in paragraph at lines 320--320
+[21]
+Overfull \hbox (7.38127pt too wide) in paragraph at lines 387--387
 []\T1/cmr/m/n/12 Yoav Shoham and Kevin Leyton-Brown. \T1/cmr/m/it/12 Mul-ti-a-g
 ent Sys-tems: Al-go-rith-mic, Game-
  []
 
 
-Overfull \hbox (5.42549pt too wide) in paragraph at lines 320--320
+Overfull \hbox (5.42549pt too wide) in paragraph at lines 387--387
 \T1/cmtt/m/n/12 / / ebooks . cambridge . org / ref / id / CBO9780511811654$ \T1
 /cmr/m/n/12 (vis-ited on 03/29/2018). 
  []
 
-[21] (./InfommReportEx.aux)
+[22] (./InfommReportEx.aux)
 Package logreq Info: Writing requests to 'InfommReportEx.run.xml'.
 \openout1 = `InfommReportEx.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 17179 strings out of 493029
- 308665 string characters out of 6136234
- 679795 words of memory out of 5000000
- 20515 multiletter control sequences out of 15000+600000
+ 17214 strings out of 493029
+ 310026 string characters out of 6136234
+ 683903 words of memory out of 5000000
+ 20544 multiletter control sequences out of 15000+600000
  19276 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,12n,45p,10413b,1512s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2230,24 +2375,23 @@ fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/tex
-mf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/publi
-c/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.
-pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texm
-f/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf/fonts/type1/public
-/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.p
-fb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf
-/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/
-cm-super/sfti1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pf
-b>
-Output written on InfommReportEx.pdf (21 pages, 1844419 bytes).
+s/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/s
+hare/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/typ
+e1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
+fbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/sh
+are/texmf/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf/fonts/type
+1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
+rm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/sha
+re/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1
+/public/cm-super/sfti1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sft
+t1200.pfb>
+Output written on InfommReportEx.pdf (22 pages, 4488961 bytes).
 PDF statistics:
- 4507 PDF objects out of 5155 (max. 8388607)
- 2173 compressed objects within 22 object streams
+ 18152 PDF objects out of 18468 (max. 8388607)
+ 9094 compressed objects within 91 object streams
  0 named destinations out of 1000 (max. 500000)
- 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 136 words of extra memory for PDF output out of 10000 (max. 10000000)
 

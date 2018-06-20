@@ -422,6 +422,55 @@
       \verb http://ebooks.cambridge.org/ref/id/CBO9780511811654
       \endverb
     \endentry
+    \entry{wang_social_2018}{article}{}
+      \name{author}{3}{}{%
+        {{hash=f27ec46ccd272a021fd78bdac92dd490}{%
+           family={Wang},
+           family_i={W\bibinitperiod},
+           given={Wei},
+           given_i={W\bibinitperiod}}}%
+        {{hash=39de14405b8b2f4f9676d4ebad785b30}{%
+           family={Cai},
+           family_i={C\bibinitperiod},
+           given={Meng},
+           given_i={M\bibinitperiod}}}%
+        {{hash=02dea5584b6acc607a53a3afbb979aea}{%
+           family={Zheng},
+           family_i={Z\bibinitperiod},
+           given={Muhua},
+           given_i={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{36e309b78308d76755b811382d90d885}
+      \strng{fullhash}{36e309b78308d76755b811382d90d885}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The existence of interlayer degree correlations has been disclosed by abundant multiplex network analysis. However, how they impose on the dynamics of social contagions are remain largely unknown. In this paper, we propose a non-Markovian social contagion model in multiplex networks with inter-layer degree correlations to delineate the behavior spreading, and develop an edge-based compartmental ({EBC}) theory to describe the model. We find that multiplex networks promote the final behavior adoption size. Remarkably, it can be observed that the growth pattern of the final behavior adoption size, versus the behavioral information transmission probability, changes from discontinuous to continuous once decreasing the behavior adoption threshold in one layer. We finally unravel that the inter-layer degree correlations play a role on the final behavior adoption size but have no effects on the growth pattern, which is coincidence with our prediction by using the suggested theory.}
+      \field{day}{01}
+      \field{issn}{0378-4371}
+      \field{journaltitle}{Physica A: Statistical Mechanics and its Applications}
+      \field{month}{06}
+      \field{shortjournal}{Physica A: Statistical Mechanics and its Applications}
+      \field{title}{Social contagions on correlated multiplex networks}
+      \field{urlday}{30}
+      \field{urlmonth}{05}
+      \field{urlyear}{2018}
+      \field{volume}{499}
+      \field{year}{2018}
+      \field{pages}{121\bibrangedash 128}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.physa.2017.12.081
+      \endverb
+      \verb{file}
+      \verb ScienceDirect Full Text PDF:/home/user/Zotero/storage/K4XTU4BP/Wang et al. - 2018 - Social contagions on correlated multiplex networks.pdf:application/pdf;ScienceDirect Snapshot:/home/user/Zotero/storage/T3NMNYLX/S0378437117313304.html:text/html
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0378437117313304
+      \endverb
+      \keyw{Complex networks,Social contagions,Spreading dynamics}
+    \endentry
     \entry{watts_simple_2002}{article}{}
       \name{author}{1}{}{%
         {{hash=355c0156bd97f572f7f4722ac24de548}{%

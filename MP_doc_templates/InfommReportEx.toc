@@ -8,24 +8,22 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Theory}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Game-theoretic results}{6}
+\contentsline {subsection}{\numberline {3.1}Watts-Gleeson theory of single network contagion}{6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Watts-Gleeson theory of single network contagion}{6}
+\contentsline {subsection}{\numberline {3.2}Symmetric Two-layer Watts-Gleeson Theory}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Symmetric Two-layer Watts-Gleeson Theory}{11}
+\contentsline {section}{\numberline {4}Simulations Results}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Simulations Results}{13}
+\contentsline {subsection}{\numberline {4.1}Two layer Erd\IeC {\H o}s-Renyi Graphs}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Two layer Erd\IeC {\H o}s-Renyi Graphs}{13}
+\contentsline {subsubsection}{\numberline {4.1.1}Symmetric threshold parameter}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.1}Symmetric threshold parameter}{13}
+\contentsline {subsubsection}{\numberline {4.1.2}Awareness by Social contact}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.2}Awareness by Social contact}{16}
+\contentsline {subsection}{\numberline {4.2}Planted Partition Models}{16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Planted Partition Models}{17}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.1}Symmetric threshold parameter}{17}
+\contentsline {subsubsection}{\numberline {4.2.1}Symmetric threshold parameter}{16}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.2.2}Awareness by Social contact}{19}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Conclusions}{19}
+\contentsline {section}{\numberline {5}Conclusions}{20}
